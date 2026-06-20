@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+                                  viewBox="0 0 235 235"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  preserveAspectRatio="xMidYMid meet"
+                                >
+                                  <path
+                                    opacity="0.4"
+                                    d="M117.5 215.417C88.125 195.833 79.0896 153.807 78.3333 117.5C79.0896 81.1928 88.1249 39.1666 117.5 19.5833M19.5833 117.5C39.1666 88.1249 81.1928 79.0896 117.5 78.3333C153.807 79.0896 195.833 88.1249 215.417 117.5"
+                                    stroke="#2560FF"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <path
+                                    d="M215.417 117.5C215.417 171.578 171.578 215.417 117.5 215.417M215.417 117.5C215.417 63.422 171.578 19.5833 117.5 19.5833M215.417 117.5C202.072 137.516 178.308 148.088 153.033 153.033M117.5 215.417C63.422 215.417 19.5833 171.578 19.5833 117.5M117.5 215.417C137.516 202.072 148.088 178.308 153.033 153.033M19.5833 117.5C19.5833 63.422 63.422 19.5833 117.5 19.5833M19.5833 117.5C39.1666 146.875 81.1928 155.91 117.5 156.667C129.067 156.426 141.215 155.344 153.033 153.033M117.5 19.5833C146.875 39.1666 155.91 81.1927 156.667 117.5C156.426 129.067 155.344 141.215 153.033 153.033"
+                                    stroke="url(#runtime-globe-stroke)"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  />
+                                  <defs>
+                                    <linearGradient
+                                      id="runtime-globe-stroke"
+                                      x1="182.478"
+                                      y1="43.7679"
+                                      x2="39.7277"
+                                      y2="177.092"
+                                      gradientUnits="userSpaceOnUse"
+                                    >
+                                      <stop
+                                        stop-color="#2560FF"
+                                        stop-opacity="0.1"
+                                      />
+                                      <stop
+                                        offset="0.245192"
+                                        stop-color="#2157E6"
+                                        stop-opacity="0.9"
+                                      />
+                                      <stop
+                                        offset="0.5"
+                                        stop-color="#1E4DCC"
+                                        stop-opacity="0.1"
+                                      />
+                                      <stop
+                                        offset="0.75"
+                                        stop-color="#2156E6"
+                                      />
+                                      <stop
+                                        offset="1"
+                                        stop-color="#2560FF"
+                                        stop-opacity="0.6"
+                                      />
+                                    </linearGradient>
+                                  </defs>
+                                </svg>

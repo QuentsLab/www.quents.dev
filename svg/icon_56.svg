@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  clip-rule="evenodd"
+                                  fill-rule="evenodd"
+                                  height="40"
+                                  stroke-linejoin="round"
+                                  stroke-miterlimit="2"
+                                  viewBox="0 0 40 40"
+                                  width="40"
+                                >
+                                  <image
+                                    height="40"
+                                    width="40"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABAElEQVRYhe2Y7Q2CMBCG3yP9LxvYDWQDcRJHMU6mbqIbuEH90RJJ+RB9C8XknqQ/IOTuOVqS48Q5h8yUAHYAbFhVuFcDELOQhAWwjZKX4XqUlIIVgE2U3Ib1M98INlsRJz8EqQsjMkQsaOG3okne3pIsGPjKJ52HHBhkfDtTKHILfEIFWVSQRQVZVJBFBVkMgFuCOM9Ecf4Pcc6dyBhn+N7xyOt0Y4vj/5oE83XUsvqPRAVZVJBFBVlUkEUFWQr4NumRW2SIeDZj0Z1qNWO3LMTjt3tY155n47lgU8SsSMIZdY13Ee1itkRMSSk4Rt9sesrRWUxwDIv+ae4evhleNy9pBikVSZS17wAAAABJRU5ErkJggg=="
+                                  ></image>
+                                </svg>

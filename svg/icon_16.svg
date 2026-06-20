@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 6 9"
+                                      class="arrow"
+                                    >
+                                      <path
+                                        stroke="var(--iconColor, black)"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.169"
+                                        d="M1.215 7.816 4.72 4.309 1.215.803"
+                                      />
+                                    </svg>
