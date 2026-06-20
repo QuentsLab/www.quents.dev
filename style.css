@@ -1,193 +1,4009 @@
-/* ===================================================
-   QUENTS — shared stylesheet
-   =================================================== */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+      /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+      .wp-block-ponyo-megan .toggle {
+        align-items: center;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        display: flex !important;
+        justify-content: space-between;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-megan .toggle {
+          gap: 0.25em;
+          justify-content: normal;
+        }
+      }
+      .wp-block-ponyo-megan .toggle-icon {
+        height: 1rem;
+        margin-top: 0.075em;
+        width: 1rem;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-megan .toggle-icon {
+          height: 0.75rem;
+          width: 0.75rem;
+        }
+      }
+      .wp-block-ponyo-megan .toggle-icon svg {
+        stroke: currentColor;
+        transition: transform 0.3s ease;
+      }
+      .wp-block-ponyo-megan .mega-menu-container {
+        background-color: var(--headerBackgroundColor);
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-megan .mega-menu-container {
+          border: 0;
+          box-shadow: 0 50px 40px 0 rgba(0, 0, 0, 0.14);
+          height: auto;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 100%;
+          transition:
+            opacity 0.2s ease,
+            visibility 0.1s 0.2s,
+            overflow 0.1s 0.2s;
+          width: 100%;
+        }
+        .wp-block-ponyo-megan:hover .toggle-icon svg {
+          transform: rotate(180deg);
+        }
+      }
+      .wp-block-ponyo-megan:hover .mega-menu-container {
+        pointer-events: auto;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-megan:hover .mega-menu-container {
+          height: auto;
+          opacity: 1;
+          overflow: visible;
+          transition: opacity 0.4s ease;
+          visibility: visible;
+        }
+      }
+      @media screen and (max-width: 61.1875rem) {
+        .wp-block-ponyo-megan.mega-menu-active .toggle-icon svg {
+          transform: rotate(180deg);
+        }
+        .wp-block-ponyo-megan.mega-menu-active .mega-menu-container {
+          height: auto;
+          opacity: 1;
+          overflow: visible;
+          visibility: visible;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/megan/megan-style.css */
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-melinda {
+          width: 50%;
+        }
+      }
+      .wp-block-ponyo-melinda a {
+        display: block;
+        outline-offset: 0.25rem;
+        padding: 0.75rem 1rem;
+      }
+      .wp-block-ponyo-melinda a:hover {
+        background-color: var(--menuLinkHover);
+        text-decoration: none;
+      }
+      .wp-block-ponyo-melinda a:active {
+        background-color: var(--menuLinkActive);
+      }
+      .wp-block-ponyo-melinda:not(.button:last-child) a {
+        display: flex;
+        gap: 0.75rem;
+      }
+      .wp-block-ponyo-melinda:not(.button:last-child) a:hover .label {
+        color: var(--menuLinkHoverLabelColor);
+      }
+      .wp-block-ponyo-melinda:not(.button:last-child) a:hover .arrow {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .wp-block-ponyo-melinda:not(.button:last-child) .label {
+        color: var(--menuLinkLabelColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        margin-bottom: 0;
+        max-width: 72ch;
+        transition: all 0.3s;
+      }
+      .wp-block-ponyo-melinda:not(.button:last-child) svg.arrow {
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: all 0.1s;
+      }
+      .wp-block-ponyo-melinda.button:last-child {
+        justify-content: center;
+        margin-top: auto;
+      }
+      .wp-block-ponyo-melinda.button:last-child a:hover .label {
+        text-decoration: underline;
+      }
+      .wp-block-ponyo-melinda.button:last-child .label {
+        font-size: 1rem;
+        justify-content: center;
+        width: 100%;
+      }
+      .wp-block-ponyo-melinda .label {
+        align-items: center;
+        display: inline-flex;
+        gap: 0.5rem;
+        line-height: 1.3;
+      }
+      .wp-block-ponyo-melinda svg.external-link {
+        flex-shrink: 0;
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+      .wp-block-ponyo-melinda svg.arrow {
+        width: 0.5rem;
+      }
+      .wp-block-ponyo-melinda .description {
+        color: var(--menuLinkDescriptionColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        margin-bottom: 0;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-melinda.style__highlight a {
+        background-color: var(--menuLinkActive);
+      }
+      .wp-block-ponyo-melinda .wp-block-ponyo-icon {
+        flex-shrink: 0;
+        padding-top: 0.25rem;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/melinda/melinda-style.css */
+      .wp-block-ponyo-myles {
+        flex-basis: 58%;
+        height: 100%;
+        padding: 1.25rem 0 1.75rem;
+      }
+      .wp-block-ponyo-myles ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-myles ul {
+          gap: unset;
+          max-height: 400px;
+        }
+        .wp-block-ponyo-myles.style__single-column ul {
+          max-height: none;
+        }
+        .wp-block-ponyo-myles.style__single-column ul .wp-block-ponyo-melinda {
+          width: 100%;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/myles/myles-style.css */
+      .wp-block-ponyo-mikala {
+        border-top: 1px solid var(--menuBorderColor);
+        margin: auto;
+        max-width: 1440px;
+        padding: 0 1.75rem;
+        position: relative;
+        width: 100%;
+      }
+      @media screen and (min-width: 48rem) {
+        .wp-block-ponyo-mikala {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/mikala/mikala-style.css */
+      .wp-block-ponyo-icon svg {
+        height: 100%;
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/atoms/icon/icon-style.css */
+      .wp-block-ponyo-callie {
+        display: flex;
+        gap: 0.5rem;
+      }
+      @media screen and (max-width: 61.1875rem) {
+        .wp-block-ponyo-callie {
+          flex-direction: column;
+        }
+      }
+      .wp-block-ponyo-callie a.wp-block-ponyo-button {
+        justify-content: center;
+        margin-bottom: 0;
+        max-width: none;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/callie/callie-style.css */
+      .wp-block-ponyo-kevin {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-kevin .container .organism,
+      .wp-block-ponyo-kevin .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-kevin .container .organism:last-child,
+      .wp-block-ponyo-kevin .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-kevin {
+        background-color: unset;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 1.25rem 0;
+      }
+      .wp-block-ponyo-kevin:empty {
+        display: none;
+      }
+      .text-align__left .wp-block-ponyo-kevin {
+        justify-content: flex-start;
+      }
+      .organism .wp-block-ponyo-kevin {
+        border: 0;
+      }
+      @media screen and (max-width: 31.1875rem) {
+        .wp-block-ponyo-kevin {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      .wp-block-ponyo-kevin .button-style__primary {
+        grid-column: 1/-1;
+      }
+      .wp-block-ponyo-kevin .button-style__secondary {
+        grid-column: span 1;
+      }
+      .wp-block-ponyo-kevin
+        .button-style__secondary:nth-of-type(2n):last-of-type {
+        grid-column: 1/-1 !important;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/kevin/kevin-style.css */
+      .wp-block-ponyo-text,
+      .wp-block-ponyo-text.text-sm {
+        font-size: 1.125rem;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+      }
+      .wp-block-ponyo-text,
+      .wp-block-ponyo-text.text-2xs,
+      .wp-block-ponyo-text.text-sm {
+        color: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-text.text-2xs {
+        font-size: 0.875rem;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+      }
+      .wp-block-ponyo-text.text-xs {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+      }
+      .wp-block-ponyo-text.text-md,
+      .wp-block-ponyo-text.text-xs {
+        color: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-text.text-md {
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/atoms/text/text-style.css */
+      .wp-block-ponyo-sheila {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-top: -1px;
+        width: 100%;
+      }
+      .wp-block-ponyo-sheila > .container {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(var(--columnCount), 1fr);
+        grid-template-rows: repeat(7, auto);
+        width: 100%;
+      }
+      @media screen and (max-width: 61.1875rem) {
+        .wp-block-ponyo-sheila > .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 26.5rem) {
+        .wp-block-ponyo-sheila > .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      .wp-block-ponyo-sheila .toggle-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      @media screen and (min-width: 61.25rem) {
+        .wp-block-ponyo-sheila .toggle-container {
+          border-bottom: 1px solid var(--borderColor);
+        }
+      }
+      .wp-block-ponyo-sheila.style__spaced > .container {
+        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr)) !important;
+        padding: 0 2.5rem 3rem;
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/sheila/sheila-style.css */
+      .wp-block-ponyo-axon {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-axon .container .organism,
+      .wp-block-ponyo-axon .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-axon .container .organism:last-child,
+      .wp-block-ponyo-axon .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-axon .axon-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        overflow: hidden;
+        width: 100%;
+      }
+      @media screen and (max-width: 47.9375rem) {
+        .wp-block-ponyo-axon .axon-container {
+          flex-direction: column;
+        }
+      }
+      .wp-block-ponyo-axon .axon-content {
+        flex: 1;
+      }
+      .wp-block-ponyo-axon .axon-content .axon-heading {
+        color: var(--copyColor);
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+        line-height: 120%;
+        margin: 0 0 1rem;
+        max-width: 50ch;
+      }
+      .wp-block-ponyo-axon .axon-content p {
+        color: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-axon .axon-buttons {
+        display: flex;
+        gap: 1.25rem;
+        height: auto;
+        margin: auto;
+      }
+      .wp-block-ponyo-axon.layout-vertical .axon-buttons {
+        flex-direction: column;
+      }
+      .wp-block-ponyo-axon .wp-block-ponyo-button {
+        justify-content: center;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/axon/axon-style.css */
+      .wp-block-navigation .wp-block-navigation-item__label {
+        overflow-wrap: break-word;
+      }
+      .wp-block-navigation .wp-block-navigation-item__description {
+        display: none;
+      }
+      .link-ui-tools {
+        outline: 1px solid #f0f0f0;
+        padding: 8px;
+      }
+      .link-ui-block-inserter {
+        padding-top: 8px;
+      }
+      .link-ui-block-inserter__back {
+        margin-left: 8px;
+        text-transform: uppercase;
+      }
+      /*# sourceURL=https://www.docker.com/wp/wp-includes/blocks/navigation-link/style.min.css */
+      .wp-block-search__button {
+        margin-left: 10px;
+        word-break: normal;
+      }
+      .wp-block-search__button.has-icon {
+        line-height: 0;
+      }
+      .wp-block-search__button svg {
+        height: 1.25em;
+        min-height: 24px;
+        min-width: 24px;
+        width: 1.25em;
+        fill: currentColor;
+        vertical-align: text-bottom;
+      }
+      :where(.wp-block-search__button) {
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+      }
+      .wp-block-search__inside-wrapper {
+        display: flex;
+        flex: auto;
+        flex-wrap: nowrap;
+        max-width: 100%;
+      }
+      .wp-block-search__label {
+        width: 100%;
+      }
+      .wp-block-search.wp-block-search__button-only .wp-block-search__button {
+        box-sizing: border-box;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: 0;
+        max-width: 100%;
+      }
+      .wp-block-search.wp-block-search__button-only
+        .wp-block-search__inside-wrapper {
+        min-width: 0 !important;
+        transition-property: width;
+      }
+      .wp-block-search.wp-block-search__button-only .wp-block-search__input {
+        flex-basis: 100%;
+        transition-duration: 0.3s;
+      }
+      .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,
+      .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden
+        .wp-block-search__inside-wrapper {
+        overflow: hidden;
+      }
+      .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden
+        .wp-block-search__input {
+        border-left-width: 0 !important;
+        border-right-width: 0 !important;
+        flex-basis: 0;
+        flex-grow: 0;
+        margin: 0;
+        min-width: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 0 !important;
+      }
+      :where(.wp-block-search__input) {
+        appearance: none;
+        border: 1px solid #949494;
+        flex-grow: 1;
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+        line-height: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 3rem;
+        padding: 8px;
+        text-decoration: unset !important;
+        text-transform: inherit;
+      }
+      :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) {
+        background-color: #fff;
+        border: 1px solid #949494;
+        box-sizing: border-box;
+        padding: 4px;
+      }
+      :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper)
+        .wp-block-search__input {
+        border: none;
+        border-radius: 0;
+        padding: 0 4px;
+      }
+      :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper)
+        .wp-block-search__input:focus {
+        outline: none;
+      }
+      :where(.wp-block-search__button-inside .wp-block-search__inside-wrapper)
+        :where(.wp-block-search__button) {
+        padding: 4px 8px;
+      }
+      .wp-block-search.aligncenter .wp-block-search__inside-wrapper {
+        margin: auto;
+      }
+      .wp-block[data-align="right"]
+        .wp-block-search.wp-block-search__button-only
+        .wp-block-search__inside-wrapper {
+        float: right;
+      }
+      /*# sourceURL=https://www.docker.com/wp/wp-includes/blocks/search/style.min.css */
+      .wp-block-group {
+        box-sizing: border-box;
+      }
+      :where(.wp-block-group.wp-block-group-is-layout-constrained) {
+        position: relative;
+      }
+      /*# sourceURL=https://www.docker.com/wp/wp-includes/blocks/group/style.min.css */
+      .wp-block-ponyo-richard {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-richard .container .organism,
+      .wp-block-ponyo-richard .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-richard .container .organism:last-child,
+      .wp-block-ponyo-richard .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-richard {
+        text-align: center;
+      }
+      .wp-block-ponyo-richard.text-align__left > .container {
+        align-items: flex-start;
+        text-align: left;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-eyebrow {
+        margin-bottom: 0.5rem;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-logo {
+        max-height: 64px;
+      }
+      .wp-block-ponyo-richard.style__page-heading-eyebrow-h1
+        .wp-block-ponyo-heading,
+      .wp-block-ponyo-richard.style__page-heading-h1 .wp-block-ponyo-heading {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-eyebrow {
+        margin-bottom: 0.75rem;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading {
+        color: var(--headlineColor);
+        margin-bottom: 0.75rem;
+        text-wrap: balance;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-sm {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-md {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-lg {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-2xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-3xl,
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-4xl,
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-5xl,
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-6xl,
+      .wp-block-ponyo-richard .wp-block-ponyo-heading.text-7xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -0.6px;
+        line-height: 120%;
+        max-width: 50ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-text.text-default {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-text {
+        color: var(--copyColor);
+        margin-bottom: 0.75rem;
+        text-wrap: balance;
+      }
+      .wp-block-ponyo-richard .wp-block-ponyo-bernard {
+        margin-top: 3rem;
+      }
+      .wp-block-ponyo-richard > .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/richard/richard-style.css */
+      .wp-block-ponyo-adam {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-adam > .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-adam.adam-align__center > .container,
+      .wp-block-ponyo-adam > .container.adam-align__center {
+        align-items: center;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-heading {
+        flex: 1;
+        flex-basis: 100%;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-media,
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-text {
+        flex: 1;
+        min-width: 32ch;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-media .organism,
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-text .organism {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-text {
+        padding: 3rem 3rem 0;
+      }
+      .wp-block-ponyo-adam
+        .wp-block-ponyo-adam-text
+        .organism
+        + .wp-block-ponyo-bernard {
+        padding-top: 1.25rem;
+      }
+      @media screen and (min-width: 48rem) {
+        .wp-block-ponyo-adam .wp-block-ponyo-adam-text {
+          padding: 3rem 0 3rem 3rem;
+        }
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-media {
+        padding: 3rem;
+      }
+      @media screen and (min-width: 48rem) {
+        .wp-block-ponyo-adam .wp-block-ponyo-adam-media {
+          padding: 3rem 3rem 3rem 0;
+        }
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-kevin {
+        justify-content: flex-start;
+      }
+      .wp-block-ponyo-adam.adam-style__reversed > .container {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+      }
+      .wp-block-ponyo-adam.adam-style__reversed .wp-block-ponyo-adam-heading {
+        order: 1;
+      }
+      .wp-block-ponyo-adam.adam-style__reversed .wp-block-ponyo-adam-text {
+        padding-bottom: 3rem;
+        padding-top: 0;
+      }
+      @media screen and (min-width: 48rem) {
+        .wp-block-ponyo-adam.adam-style__reversed .wp-block-ponyo-adam-text {
+          padding: 3rem 3rem 3rem 0;
+        }
+        .wp-block-ponyo-adam.adam-style__reversed .wp-block-ponyo-adam-media {
+          padding: 3rem 0 3rem 3rem;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/adam/adam-style.css */
+      .wp-block-ponyo-image img {
+        height: auto;
+      }
+      .wp-block-ponyo-image.has-link {
+        cursor: pointer;
+      }
+      .wp-block-ponyo-image.has-link a {
+        display: block;
+      }
+      .wp-block-ponyo-image.has-link a img {
+        filter: brightness(0.9);
+        opacity: 0.85;
+        transition:
+          opacity,
+          filter 0.2s ease;
+      }
+      .wp-block-ponyo-image.has-link a:hover img {
+        filter: brightness(1);
+        opacity: 1;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/atoms/image/image-style.css */
+      .wp-block-ponyo-carlos {
+        transition: all 0.25s ease;
+      }
+      .wp-block-ponyo-carlos:active,
+      .wp-block-ponyo-carlos:hover {
+        background: var(--cardBackgroundHover);
+      }
+      .wp-block-ponyo-carlos:active {
+        transform: translateY(-4px);
+      }
+      .wp-block-ponyo-carlos {
+        align-items: start;
+        display: grid;
+        grid-row: span 8;
+        grid-template-rows: subgrid;
+        grid-gap: 0;
+        background: var(--cardBackgroundColor);
+        border: 1px solid var(--borderColor);
+        overflow: hidden;
+        padding: 2rem 3rem;
+        width: calc(100% + 1px);
+      }
+      .wp-block-ponyo-carlos:hover {
+        text-decoration: none;
+      }
+      .wp-block-ponyo-carlos.bg__image {
+        background-position: 50%;
+        background-size: cover;
+      }
+      .wp-block-ponyo-carlos .image-container {
+        display: flex;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        pointer-events: none;
+        width: 100%;
+      }
+      .wp-block-ponyo-carlos img {
+        height: 100%;
+        max-width: none;
+        pointer-events: none;
+        width: 100%;
+      }
+      .wp-block-ponyo-carlos .icon {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos .icon svg {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+      .wp-block-ponyo-carlos .eyebrow {
+        color: var(--copyColor2);
+        display: flex;
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-weight: 500;
+        justify-content: space-between;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-carlos .eyebrow:has(*) {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos .copy-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .wp-block-ponyo-carlos .copy-container:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos .wp-block-ponyo-heading {
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+        --iconColor: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-carlos .wp-block-ponyo-heading svg {
+        height: 1.25rem;
+        width: 1.25rem;
+      }
+      .wp-block-ponyo-carlos .body-copy {
+        color: var(--copyColor);
+        font-size: 1rem;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+      }
+      .wp-block-ponyo-carlos .body-copy,
+      .wp-block-ponyo-carlos .footer {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-carlos .footer {
+        color: var(--subheadColor);
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        gap: 0.375rem;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+      }
+      .wp-block-ponyo-carlos .footer:has(*):not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos .footer-top {
+        font-weight: 500;
+      }
+      .wp-block-ponyo-carlos .contributors:has(*):not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos .contributors .wp-block-ponyo-blog-contributor {
+        padding: 0;
+      }
+      .wp-block-ponyo-carlos .link-copy {
+        align-items: center;
+        align-self: end;
+        color: var(--cardCTATextColor);
+        display: flex;
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        margin-top: 1rem;
+        max-width: 72ch;
+        transition: all 0.25s ease;
+      }
+      .wp-block-ponyo-carlos .link-copy span {
+        height: 1rem;
+        margin: 0.375rem 0 0 0.5rem;
+        width: 0.5rem;
+      }
+      .wp-block-ponyo-carlos.carlos-style__small .image-container {
+        grid-row: 2;
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-carlos.carlos-style__small .image-container img {
+        height: 5rem;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 5rem;
+      }
+      .wp-block-ponyo-carlos.carlos-style__small .eyebrow {
+        grid-row: 1;
+      }
+      .wp-block-ponyo-carlos.carlos-style__small.post-type__contributor img {
+        border-radius: 50%;
+      }
+      .wp-block-ponyo-carlos.carlos-style__paddingless .image-container {
+        margin-left: -3rem;
+        margin-top: -2rem;
+        width: calc(100% + 6rem);
+      }
+      .wp-block-ponyo-carlos.carlos-style__featured {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr auto auto auto;
+        width: 100%;
+        grid-column-gap: 1.75rem;
+        border-bottom: none;
+        border-left: none;
+      }
+      @media screen and (max-width: 31.1875rem) {
+        .wp-block-ponyo-carlos.carlos-style__featured {
+          grid-template-columns: 1fr;
+        }
+      }
+      .wp-block-ponyo-carlos.carlos-style__featured .image-container {
+        grid-row-start: span 5;
+        margin-left: -3rem;
+        margin-top: -2rem;
+        overflow: initial;
+        width: calc(100% + 6rem);
+      }
+      @media screen and (min-width: 31.25rem) {
+        .wp-block-ponyo-carlos.carlos-style__featured .image-container {
+          margin: 0;
+          width: auto;
+        }
+      }
+      .wp-block-ponyo-carlos.carlos-style__featured .wp-block-ponyo-heading {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/carlos/carlos-style.css */
+      .wp-block-ponyo-matthew-grid {
+        margin-top: -1px;
+      }
+      .wp-block-ponyo-matthew-grid > .container {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(31ch, 1fr));
+        grid-template-rows: repeat(7, minmax(0, max-content));
+        grid-gap: 0;
+        margin: 0 0 -1px -1px;
+        overflow: hidden;
+      }
+      .wp-block-ponyo-matthew-grid > .container:nth-last-child(n + 2) {
+        margin-bottom: 1px;
+      }
+      .wp-block-ponyo-matthew.style__spaced
+        .wp-block-ponyo-matthew-grid
+        > .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding: 0 2.5rem 3rem;
+      }
+      .wp-block-ponyo-matthew.style__spaced
+        .wp-block-ponyo-matthew-grid
+        > .container
+        > * {
+        flex: 1 1 calc(33.33333% - 0.83333rem);
+        min-width: 31ch;
+      }
+      @media screen and (max-width: 26.5rem) {
+        .wp-block-ponyo-matthew.style__spaced
+          .wp-block-ponyo-matthew-grid
+          > .container
+          > * {
+          min-width: 100%;
+        }
+      }
+      .wp-block-ponyo-matthew-grid .wp-block-ponyo-carlos,
+      .wp-block-ponyo-matthew-grid .wp-block-ponyo-wanda {
+        margin-bottom: -1px;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/matthew-grid/matthew-grid-style.css */
+      .wp-block-ponyo-matthew {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1px;
+        width: 100%;
+      }
+      .wp-block-ponyo-matthew .container {
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/matthew/matthew-style.css */
+      .wp-block-ponyo-logo {
+        --imageHeight: 2.625rem;
+        --imageMaxWidth: 8rem;
+        --imageMinWidth: 2.625rem;
+        display: flex;
+        justify-content: center;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 1.25rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-logo img {
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain;
+      }
+      .wp-block-ponyo-logo img,
+      .wp-block-ponyo-logo svg {
+        height: var(--imageHeight);
+        max-width: var(--imageMaxWidth);
+        min-width: var(--imageMinWidth);
+      }
+      a.wp-block-ponyo-logo {
+        transition: all 0.25s ease;
+      }
+      a.wp-block-ponyo-logo:active,
+      a.wp-block-ponyo-logo:hover {
+        background: var(--cardBackgroundHover);
+      }
+      a.wp-block-ponyo-logo:active {
+        transform: translateY(-4px);
+      }
+      a.wp-block-ponyo-logo {
+        border: 1px solid var(--borderColor);
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/atoms/logo/logo-style.css */
+      .wp-block-ponyo-mason {
+        justify-content: center;
+        margin: -1px 0 -1px -1px;
+        width: calc(100% + 1px);
+      }
+      .wp-block-ponyo-mason img,
+      .wp-block-ponyo-mason svg {
+        margin: 1.5rem;
+        width: auto;
+      }
+      .wp-block-ponyo-mason [class*="wp-block-"] {
+        align-items: center;
+        background: var(--backgroundColor);
+        border: 1px solid var(--borderColor);
+        display: flex;
+        justify-content: center;
+      }
+      .wp-block-ponyo-mason picture {
+        display: contents;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/mason/mason-style.css */
+      .wp-block-ponyo-victor {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 0;
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-victor > .container {
+        width: 100%;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor > .container {
+        filter: blur(10px) grayscale(1) brightness(0.95);
+        opacity: 0.33;
+        overflow: hidden;
+        position: relative;
+        transition:
+          filter 0.42s ease,
+          opacity 1s ease;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor > .container.ready {
+        filter: unset;
+        height: unset;
+        opacity: unset;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor > .container:before {
+        background: linear-gradient(
+          90deg,
+          var(--backgroundColor),
+          hsla(0, 0%, 100%, 0) 18%,
+          hsla(0, 0%, 100%, 0) 50%,
+          hsla(0, 0%, 100%, 0) 82%,
+          var(--backgroundColor)
+        );
+        content: "";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor .slick-track {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+      }
+      body:not(.wp-admin)
+        .wp-block-ponyo-victor
+        .slick-track
+        [class*="wp-block-"] {
+        margin: 0 -1px -1px 0;
+        min-width: var(--imageMinWidth);
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor .slick-track.align__left {
+        justify-content: flex-start;
+      }
+      body:not(.wp-admin)
+        .wp-block-ponyo-victor
+        .slick-track
+        [class*="wp-block-"] {
+        margin: 0 -1px 0 0;
+      }
+      body:not(.wp-admin)
+        .wp-block-ponyo-victor
+        .slick-track
+        .wp-block-ponyo-logo {
+        --imageHeight: 7.5rem;
+        --imageMaxWidth: 15rem;
+        --imageMinWidth: 12.5rem;
+        display: flex;
+        height: var(--imageHeight);
+        justify-content: center;
+        max-width: var(--imageMaxWidth);
+        padding: 1.25rem;
+      }
+      body:not(.wp-admin)
+        .wp-block-ponyo-victor
+        .slick-track
+        .wp-block-ponyo-logo
+        img {
+        max-width: 100%;
+        min-width: unset;
+        width: revert-layer;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor .wp-block-ponyo-mason {
+        margin: -1px 0 0 -2px;
+      }
+      body:not(.wp-admin) .wp-block-ponyo-victor .slick-slide {
+        transform: translateZ(0);
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/victor/victor-style.css */
+      .wp-block-ponyo-eyebrow {
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+      }
+      .wp-block-ponyo-eyebrow .text {
+        align-items: center;
+        color: var(--highlightColor);
+        display: flex;
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-eyebrow .text > .wp-block-ponyo-icon,
+      .wp-block-ponyo-eyebrow .text > .wp-block-ponyo-logo {
+        margin-right: 0.5rem;
+      }
+      .wp-block-ponyo-eyebrow .wp-block-ponyo-logo {
+        justify-content: flex-start;
+        padding: 0;
+        width: unset;
+        --imageHeight: 1.125rem;
+        --imageMaxWidth: 3.5rem;
+        --imageMinWidth: 1.125rem;
+      }
+      .wp-block-ponyo-eyebrow .wp-block-ponyo-icon {
+        --iconColor: var(--highlightColor);
+        display: inline;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+      }
+      .wp-block-ponyo-eyebrow .wp-block-ponyo-icon svg {
+        width: 1.25rem;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/atoms/eyebrow/eyebrow-style.css */
+      .wp-block-ponyo-gabriel {
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-gabriel .container .organism,
+      .wp-block-ponyo-gabriel .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-gabriel .container .organism:last-child,
+      .wp-block-ponyo-gabriel .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-gabriel {
+        align-items: center;
+        height: unset;
+        text-align: center;
+      }
+      .wp-block-ponyo-gabriel.text-align__left > .container {
+        align-items: flex-start;
+        text-align: left;
+      }
+      .wp-block-ponyo-gabriel > .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-gabriel > .container > .wp-block-ponyo-logo {
+        height: 4rem;
+        padding: 0;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-eyebrow {
+        margin-bottom: 0.75rem;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading {
+        color: var(--headlineColor);
+        margin-bottom: 0.75rem;
+        text-wrap: balance;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-sm {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-md {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-lg {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-2xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-3xl,
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-4xl,
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-5xl,
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-6xl,
+      .wp-block-ponyo-gabriel .wp-block-ponyo-heading.text-7xl {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -0.6px;
+        line-height: 120%;
+        max-width: 50ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-text.text-default {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-gabriel .wp-block-ponyo-text {
+        color: var(--copyColor);
+        margin-bottom: 0.75rem;
+        text-wrap: balance;
+      }
+      .entry-content .organism .container > .wp-block-ponyo-gabriel {
+        border-left: none;
+        border-right: none;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/gabriel/gabriel-style.css */
+      @media screen and (min-width: 48rem) {
+        .container > .wp-block-ponyo-column:nth-child(n + 2) {
+          border-left: 1px solid var(--borderColor);
+        }
+      }
+      .column-container > .wp-block-ponyo-layout-plain,
+      .column-container > [class*="wp-block-ponyo-layout-"] > .container,
+      .wp-block-ponyo-andre > .wp-block-ponyo-layout-plain,
+      .wp-block-ponyo-andre > [class*="wp-block-ponyo-layout-"] > .container,
+      .wp-block-ponyo-layout-plain > .wp-block-ponyo-layout-plain,
+      .wp-block-ponyo-layout-plain
+        > [class*="wp-block-ponyo-layout-"]
+        > .container {
+        border-left: 0;
+        border-right: 0;
+      }
+      .wp-block-ponyo-layout-plain {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 0;
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-column {
+        height: 100%;
+      }
+      .wp-block-ponyo-column:has(.wp-block-ponyo-victor, .wp-block-ponyo-igor) {
+        min-width: 100%;
+      }
+      .wp-block-ponyo-column > .column-container {
+        height: 100%;
+        width: 100%;
+      }
+      .wp-block-ponyo-column > .column-container > .wp-block-ponyo-button {
+        margin-left: 2.5rem;
+      }
+      .wp-block-ponyo-column
+        > .column-container
+        > [class*="wp-block-ponyo-"]:not(.wp-block-ponyo-table) {
+        border-left: 0;
+        border-right: 0;
+      }
+      .wp-block-ponyo-column
+        > .column-container
+        > [class*="wp-block-ponyo-"]:last-child,
+      .wp-block-ponyo-column
+        > .column-container
+        > [class*="wp-block-ponyo-"]:last-child
+        > .container {
+        border-bottom: 0;
+      }
+      .wp-block-ponyo-column > .column-container .organism.last-of-type {
+        border-bottom: none;
+      }
+      .wp-block-ponyo-column
+        > .column-container
+        :first-child:is(.wp-block-ponyo-gabriel) {
+        border-bottom: 0;
+      }
+      .wp-block-ponyo-column.is-drawer .drawer-toggle-wrapper {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .container
+        .organism,
+      .wp-block-ponyo-column.is-drawer .drawer-toggle-wrapper .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .container
+        .organism:last-child,
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-column.is-drawer .drawer-toggle-wrapper.align__center {
+        text-align: center;
+      }
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .drawer-label-closed.active,
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .drawer-label-open.active {
+        display: revert;
+      }
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .drawer-label-closed.inactive,
+      .wp-block-ponyo-column.is-drawer
+        .drawer-toggle-wrapper
+        .drawer-label-open.inactive {
+        display: none;
+      }
+      .wp-block-ponyo-column.is-drawer
+        .column-container
+        + .drawer-toggle-wrapper {
+        margin-bottom: 0;
+        margin-top: 1.75rem;
+      }
+      .wp-block-ponyo-column.is-drawer .column-container {
+        height: 0;
+        overflow: hidden;
+      }
+      .wp-block-ponyo-column.is-drawer .wp-block-ponyo-button {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .wp-block-ponyo-column > .wp-block-ponyo-image,
+      .wp-block-ponyo-column > .wp-block-ponyo-kevin,
+      .wp-block-ponyo-column > .wp-block-ponyo-video {
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        width: calc(100% - 2px);
+      }
+      .column-container > .wp-block-ponyo-carlos {
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/layouts/column/column-style.css */
+      .wp-block-ponyo-layout-default {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-layout-default > .container {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+      }
+      @media screen and (max-width: 47.9375rem) {
+        .wp-block-ponyo-layout-default > .container {
+          grid-template-columns: 100%;
+        }
+      }
+      .wp-block-ponyo-layout-default > .container .organism {
+        border-left: none;
+        border-right: none;
+      }
+      .wp-block-ponyo-layout-default
+        > .container
+        > .wp-block-ponyo-column
+        > .column-container {
+        border: 0;
+      }
+      .wp-block-ponyo-layout-default.justify__center > .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 45em;
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/layouts/layout-default/layout-default-style.css */
+      .wp-block-ponyo-matthew-heading .wp-block-ponyo-gabriel {
+        border-bottom: 0;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/matthew-heading/matthew-heading-style.css */
+      .wp-block-ponyo-erika {
+        --borderColor: transparent;
+        align-items: start;
+        display: grid;
+        grid-row: span 8;
+        grid-template-rows: subgrid;
+        grid-gap: 0 0;
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        overflow: hidden;
+        padding: 2rem;
+        text-decoration: none;
+        width: calc(100% + 1px);
+      }
+      li.wp-block-post .wp-block-ponyo-erika {
+        max-width: clamp(140px, 100%, 480px);
+      }
+      .wp-block-ponyo-erika .image-container {
+        border-radius: 0;
+        display: flex;
+        margin: 0 0 1.25rem;
+        pointer-events: none;
+        width: 100%;
+      }
+      .wp-block-ponyo-erika .image-container .wp-block-ponyo-image {
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        .wp-block-ponyo-erika .image-container {
+          margin-top: 1rem;
+        }
+      }
+      .wp-block-ponyo-erika .copy-container > :last-child {
+        margin: 0;
+      }
+      .wp-block-ponyo-erika img {
+        max-width: none;
+        pointer-events: none;
+        width: 100%;
+      }
+      .wp-block-ponyo-erika .icon {
+        margin-bottom: 1rem;
+      }
+      .wp-block-ponyo-erika .icon svg {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+      .wp-block-ponyo-erika .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .wp-block-ponyo-erika .wp-block-ponyo-icon {
+        height: 2.5rem;
+        margin-bottom: 1rem;
+        width: 2.5rem;
+      }
+      .wp-block-ponyo-erika .container {
+        width: 100%;
+      }
+      .wp-block-ponyo-erika .eyebrow {
+        color: var(--headlineColor);
+        display: flex;
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        font-weight: 600;
+        justify-content: space-between;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-erika .eyebrow-right {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-erika h4 {
+        color: var(--headlineColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+        margin: 0 0 0.375rem;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-erika p {
+        color: var(--copyColor);
+        font-size: 1rem;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+        margin: 0 0 1rem;
+      }
+      .wp-block-ponyo-erika p,
+      .wp-block-ponyo-erika p.footer-top {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-erika p.footer-top {
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        --copyColor: var(--linkColor);
+        margin: 0 0 0.375rem;
+      }
+      .wp-block-ponyo-erika p.footer-bottom {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+        --copyColor: var(--copyColor);
+      }
+      .wp-block-ponyo-erika .social-icons {
+        --iconColor: var(--linkColor);
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+      }
+      .wp-block-ponyo-erika[class*="scheme"] {
+        background: var(--cardBackgroundColor);
+      }
+      .wp-block-ponyo-erika.erika-style__paddingless .image-container {
+        margin: -2rem -2rem 1.25rem;
+        width: calc(100% + 4rem);
+      }
+      .wp-block-ponyo-erika.erika-style__small .image-container {
+        align-self: end;
+        border-radius: 0;
+        max-height: 5rem;
+        max-width: 5rem;
+      }
+      .wp-block-ponyo-erika.variant__rounded {
+        background: linear-gradient(
+            var(--cardBackgroundHover),
+            var(--cardBackgroundHover)
+          )
+          padding-box;
+        border: 1px solid var(--borderColor);
+        border-radius: 1rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: border-color 0s ease-in-out !important;
+      }
+      .wp-block-ponyo-erika.variant__rounded .image-container {
+        margin: 0 0 -2rem -2rem;
+        order: 1;
+        width: calc(100% + 4rem);
+      }
+      .wp-block-ponyo-erika.variant__rounded:hover {
+        animation: borderHalfToneMove 3s ease-in-out infinite alternate;
+        background:
+          linear-gradient(
+              var(--cardBackgroundHover),
+              var(--cardBackgroundHover)
+            )
+            padding-box,
+          linear-gradient(
+              64deg,
+              var(--borderColor) 40%,
+              var(--highlightColor) 50%,
+              var(--borderColor) 60%
+            )
+            border-box;
+        background-position:
+          0 0,
+          50% 50%;
+        background-size:
+          100% 100%,
+          300% 300%;
+        border-color: transparent;
+        transition: border-color 0.5s ease-in-out !important;
+      }
+      @keyframes borderHalfToneMove {
+        0% {
+          background-position:
+            0 0,
+            40% 50%;
+        }
+        to {
+          background-position:
+            0 0,
+            60% 50%;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/erika/erika-style.css */
+      .wp-block-ponyo-stephen {
+        justify-content: center;
+        padding: 1.5rem;
+      }
+      .wp-block-ponyo-stephen,
+      .wp-block-ponyo-stephen h2 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .wp-block-ponyo-stephen h2 {
+        color: var(--headlineColor);
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+        line-height: 120%;
+        max-width: 50ch;
+        width: 100%;
+      }
+      .wp-block-ponyo-stephen p {
+        color: var(--copyColor);
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+        text-align: center;
+        width: 100%;
+      }
+      .wp-block-ponyo-stephen p,
+      .wp-block-ponyo-stephen p.description {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        max-width: 72ch;
+        max-width: 16rem;
+      }
+      .wp-block-ponyo-stephen p.description {
+        color: var(--subheadColor);
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        line-height: 150%;
+        margin: 0 0 0.375rem;
+      }
+      .wp-block-ponyo-stephen p a {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 600;
+        letter-spacing: -0.225px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/stephen/stephen-style.css */
+      .wp-block-ponyo-seldon {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-seldon .container .organism,
+      .wp-block-ponyo-seldon .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-seldon .container .organism:last-child,
+      .wp-block-ponyo-seldon .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-seldon > .container {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+      .wp-block-ponyo-seldon > .container > .wp-block-ponyo-andy,
+      .wp-block-ponyo-seldon > .container > .wp-block-ponyo-gabriel,
+      .wp-block-ponyo-seldon > .container > .wp-block-ponyo-richard {
+        width: 100%;
+      }
+      .wp-block-ponyo-seldon.split-row > .container {
+        align-items: stretch;
+        flex-direction: column;
+        row-gap: 1.5rem;
+      }
+      .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen {
+        align-items: center;
+        -moz-column-gap: 1.75rem;
+        column-gap: 1.75rem;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        max-width: none;
+        row-gap: 0.75rem;
+        text-align: left;
+        width: 100%;
+      }
+      .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen h2 {
+        align-self: center;
+        grid-column: 1;
+        grid-row: 1/-1;
+        justify-self: start;
+        text-align: left;
+      }
+      .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen h5,
+      .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen p.description {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+        max-width: none;
+        text-align: left;
+      }
+      .wp-block-ponyo-seldon.split-row
+        .wp-block-ponyo-stephen
+        p:not(.description) {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+        max-width: none;
+        text-align: left;
+      }
+      .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen a {
+        text-align: left;
+      }
+      @media screen and (max-width: 31.1875rem) {
+        .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen {
+          grid-template-columns: 1fr;
+        }
+        .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen h2,
+        .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen h5,
+        .wp-block-ponyo-seldon.split-row .wp-block-ponyo-stephen p.description,
+        .wp-block-ponyo-seldon.split-row
+          .wp-block-ponyo-stephen
+          p:not(.description) {
+          grid-column: 1;
+          grid-row: auto;
+        }
+      }
+      .wp-block-ponyo-seldon.compact .wp-block-ponyo-stephen h2 {
+        font-family: Repro, Helvetica, Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        line-height: 120%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-seldon.compact
+        .wp-block-ponyo-stephen
+        p:not(.description) {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-seldon.compact .wp-block-ponyo-stephen h5,
+      .wp-block-ponyo-seldon.compact .wp-block-ponyo-stephen p.description {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 140%;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-seldon.compact .wp-block-ponyo-stephen a {
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-weight: 600;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/seldon/seldon-style.css */
+      .wp-block-ponyo-russell:hover .dropdown {
+        display: block;
+      }
+      .wp-block-ponyo-russell {
+        max-width: 380px;
+        padding: 0;
+        position: relative;
+      }
+      .wp-block-ponyo-russell .dropdown {
+        display: none;
+        left: 50%;
+        min-width: 360px;
+        padding: 10px;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 999;
+      }
+      .wp-block-ponyo-russell .wrap:before {
+        background-color: var(--tooltipBackground);
+        border-radius: 0.25rem;
+        content: "";
+        height: 3.75rem;
+        left: 50%;
+        position: absolute;
+        top: 1px;
+        transform: translateX(-50%) rotate(45deg);
+        width: 3.75rem;
+        z-index: -1;
+      }
+      .wp-block-ponyo-russell .wrap {
+        background-color: var(--tooltipBackground);
+        border-radius: 0.375rem;
+        padding: 1rem;
+        position: relative;
+      }
+      .wp-block-ponyo-russell .wrap a.wp-block-ponyo-button {
+        --buttonPrimaryBackground: transparent;
+        --buttonPrimaryHoverBackground: hsla(0, 0%, 100%, 0.24);
+        --buttonPrimaryHoverBorder: transparent;
+        border: 0;
+        box-shadow: unset;
+        flex-wrap: nowrap;
+        width: 100%;
+      }
+      .wp-block-ponyo-russell .wrap a.wp-block-ponyo-button:before {
+        content: unset;
+      }
+      .wp-block-ponyo-russell svg {
+        height: unset;
+        max-width: 2rem;
+        width: unset;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/russell/russell-style.css */
+      .wp-block-ponyo-hiroko {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .wp-block-ponyo-hiroko > .container {
+        width: 100%;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-richard {
+        border: none;
+        padding-bottom: 0;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-lottie,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-video {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor .container .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image .container .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-lottie .container .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-lottie .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-video .container .organism,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-video .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-hiroko
+        .wp-block-ponyo-igor
+        .container
+        .organism:last-child,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor .organism:last-child,
+      .wp-block-ponyo-hiroko
+        .wp-block-ponyo-image
+        .container
+        .organism:last-child,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image .organism:last-child,
+      .wp-block-ponyo-hiroko
+        .wp-block-ponyo-lottie
+        .container
+        .organism:last-child,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-lottie .organism:last-child,
+      .wp-block-ponyo-hiroko
+        .wp-block-ponyo-video
+        .container
+        .organism:last-child,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-video .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-lottie,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-video {
+        border: none;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor {
+        border: 0;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor .wp-block-ponyo-image {
+        padding: 0;
+        width: auto;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-image.fullbleed {
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .wp-block-ponyo-hiroko .wp-block-ponyo-igor,
+      .wp-block-ponyo-hiroko .wp-block-ponyo-victor {
+        flex: 1;
+        min-width: 32ch;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/hiroko/hiroko-style.css */
+      .is-small-text {
+        font-size: 0.875em;
+      }
+      .is-regular-text {
+        font-size: 1em;
+      }
+      .is-large-text {
+        font-size: 2.25em;
+      }
+      .is-larger-text {
+        font-size: 3em;
+      }
+      .has-drop-cap:not(:focus):first-letter {
+        float: left;
+        font-size: 8.4em;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 0.68;
+        margin: 0.05em 0.1em 0 0;
+        text-transform: uppercase;
+      }
+      body.rtl .has-drop-cap:not(:focus):first-letter {
+        float: none;
+        margin-left: 0.1em;
+      }
+      p.has-drop-cap.has-background {
+        overflow: hidden;
+      }
+      :root :where(p.has-background) {
+        padding: 1.25em 2.375em;
+      }
+      :where(p.has-text-color:not(.has-link-color)) a {
+        color: inherit;
+      }
+      p.has-text-align-left[style*="writing-mode:vertical-lr"],
+      p.has-text-align-right[style*="writing-mode:vertical-rl"] {
+        rotate: 180deg;
+      }
+      /*# sourceURL=https://www.docker.com/wp/wp-includes/blocks/paragraph/style.min.css */
+      .wp-block-post-content {
+        display: flow-root;
+      }
+      /*# sourceURL=https://www.docker.com/wp/wp-includes/blocks/post-content/style.min.css */
+      .wp-block-ponyo-faith {
+        width: -moz-max-content;
+        width: max-content;
+      }
+      @media screen and (max-width: 61.1875rem) {
+        .wp-block-ponyo-faith {
+          flex: 1;
+        }
+      }
+      .wp-block-ponyo-faith h2 {
+        color: var(--headlineColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        margin: 0 0 0.5rem;
+        max-width: 72ch;
+      }
+      .wp-block-ponyo-faith ul {
+        list-style: none;
+        padding: 0;
+      }
+      .wp-block-ponyo-faith ul li {
+        margin: 0 0 0.5rem;
+      }
+      .wp-block-ponyo-faith a {
+        color: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        line-height: 1;
+        max-width: 72ch;
+        text-decoration: initial;
+      }
+      .wp-block-ponyo-faith a:active,
+      .wp-block-ponyo-faith a:focus,
+      .wp-block-ponyo-faith a:hover {
+        text-decoration: underline;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/faith/faith-style.css */
+      .wp-block-ponyo-freddie {
+        padding: 0 0 2rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-freddie .menu-container {
+        flex-direction: column;
+        width: 100%;
+      }
+      @media screen and (min-width: 31.25rem) {
+        .wp-block-ponyo-freddie .menu-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 1.75rem;
+          justify-content: space-between;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/freddie/freddie-style.css */
+      .wp-block-ponyo-newsletter-social ul.social-wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 0.75rem;
+        list-style-type: none;
+        margin: 0 0 2rem;
+        padding: 3rem 2.5rem 0;
+      }
+      .wp-block-ponyo-newsletter-social ul.social-wrap svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/newsletter/newsletter-social/newsletter-social-style.css */
+      .wp-block-ponyo-foster {
+        align-items: center;
+        display: flex;
+      }
+      @media screen and (max-width: 47.9375rem) {
+        .wp-block-ponyo-foster {
+          align-items: center;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+      }
+      .wp-block-ponyo-foster .wp-block-ponyo-text,
+      .wp-block-ponyo-foster a {
+        color: var(--copyColor);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: -0.15px;
+        line-height: 130%;
+        max-width: 72ch;
+      }
+      @media screen and (min-width: 48rem) {
+        .wp-block-ponyo-foster .container {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 1.25rem;
+        }
+        .wp-block-ponyo-foster .container > :not(:first-child):before {
+          background-color: var(--copyColor);
+          content: "";
+          display: inline-block;
+          height: 0.75rem;
+          margin: 0 8px;
+          position: relative;
+          top: 2px;
+          width: 1px;
+        }
+        .wp-block-ponyo-foster #ot-sdk-btn {
+          margin-left: 2rem;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/foster/foster-style.css */
+      .wp-block-ponyo-franklin {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.25rem;
+        width: 100%;
+      }
+      @media screen and (max-width: 47.9375rem) {
+        .wp-block-ponyo-franklin {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+      }
+      .wp-block-ponyo-franklin ul.social-wrap {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .wp-block-ponyo-franklin ul.social-wrap svg {
+        --iconColor: var(--copyColor);
+      }
+      @media screen and (max-width: 61.1875rem) {
+        .wp-block-ponyo-franklin ul.social-wrap {
+          gap: 0.75rem;
+        }
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/molecules/franklin/franklin-style.css */
+      .wp-block-ponyo-fritz {
+        align-items: center;
+        background: var(--backgroundColor);
+        border-bottom: 1px solid var(--borderColor);
+        border-left: 1px solid var(--borderColor);
+        border-right: 1px solid var(--borderColor);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-fritz .container .organism,
+      .wp-block-ponyo-fritz .organism {
+        align-items: flex-start;
+        border: none;
+        padding: 0 0 1.5rem;
+        width: 100%;
+      }
+      .wp-block-ponyo-fritz .container .organism:last-child,
+      .wp-block-ponyo-fritz .organism:last-child {
+        padding: 0;
+      }
+      .wp-block-ponyo-fritz > .container {
+        width: 100%;
+      }
+      /*# sourceURL=https://www.docker.com/app/themes/Ponyo/dist/blocks/organisms/fritz/fritz-style.css */
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+      /*# sourceURL=wp-emoji-styles-inline-css */
+      .wp-container-core-group-is-layout-bb62f62d > * {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+      .wp-container-core-group-is-layout-bb62f62d > * + * {
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+      /*# sourceURL=core-block-supports-inline-css */
+      .skip-link.screen-reader-text {
+        border: 0;
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute !important;
+        width: 1px;
+        word-wrap: normal !important;
+      }
 
-:root{
-  --bg:#FFFFFF;
-  --bg-soft:#F6F9FD;
-  --surface:#FFFFFF;
-  --surface-2:#F0F4FA;
-  --border:#E7ECF3;
-  --text:#0B1A33;
-  --muted:#5B6B85;
-  --muted-2:#94A1B8;
-  --blue:#0E6FFF;
-  --blue-deep:#0B57D0;
-  --cyan:#00CFFF;
-  --violet:#8B5CF6;
-  --blue-soft:rgba(14,111,255,0.08);
-  --shadow:0 16px 40px rgba(15,35,75,0.10);
-  --radius:12px;
+      .skip-link.screen-reader-text:focus {
+        background-color: #eee;
+        clip-path: none;
+        color: #444;
+        display: block;
+        font-size: 1em;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+      }
+      /*# sourceURL=wp-block-template-skip-link-inline-css */
+      .bg__image > * > *,
+      .runtime-grid-portable,
+      .hero-right-portable {
+        z-index: 1;
+        position: relative;
+      }
 
-  /* terminal stays dark regardless of page theme — Docker-style CLI card */
-  --term-bg:#0B0F17;
-  --term-bar:#11161F;
-  --term-border:#1F2733;
-  --term-text:#E8ECF4;
-  --term-muted:#6B7689;
-  --term-blue:#5B9DFF;
-  --term-cyan:#3FD7F2;
-}
-body.dark{
-  --bg:#0D1117;
-  --bg-soft:#11161F;
-  --surface:#161B26;
-  --surface-2:#1B2230;
-  --border:#232B3A;
-  --text:#F0F3F8;
-  --muted:#9099AC;
-  --muted-2:#5C6680;
-  --blue-soft:rgba(14,111,255,0.16);
-  --shadow:0 16px 40px rgba(0,0,0,0.5);
-}
+      #agent-platform .wp-block-ponyo-adam-text .organism + .organism {
+        padding-top: 3rem;
+      }
 
-html{scroll-behavior:smooth;}
-body{
-  background:var(--bg);color:var(--text);
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
-  transition:background .25s,color .25s;overflow-x:hidden;
-}
-a{color:inherit;text-decoration:none;}
-img,svg{display:block;}
-ul{list-style:none;}
-button{font-family:inherit;}
+      #three-products-one-platform .wp-block-ponyo-gabriel {
+        background-color: unset;
+      }
+      #three-products-one-platform .wp-block-ponyo-matthew-grid {
+        padding: 3rem 2.5rem;
+      }
+      #three-products-one-platform .wp-block-ponyo-carlos,
+      #three-products-one-platform .wp-block-ponyo-matthew-grid > .container {
+        grid-row: unset;
+        grid-template-rows: unset;
+      }
+      #three-products-one-platform .wp-block-ponyo-matthew-grid > .container {
+        grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+        gap: 20px;
+      }
+      #three-products-one-platform .wp-block-ponyo-carlos {
+        border-radius: 18px;
+        border: 1px solid rgba(15, 23, 42, 0.07);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 2rem 2rem;
+      }
 
-/* ===== NAV ===== */
-nav{
-  position:sticky;top:0;z-index:300;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:14px 48px;border-bottom:1px solid var(--border);
-  background:color-mix(in srgb, var(--bg) 90%, transparent);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-}
-.nav-left{display:flex;align-items:center;gap:36px;}
-.logo{display:flex;align-items:center;gap:9px;color:var(--text);}
-.logo span{font-weight:800;font-size:1.22rem;letter-spacing:-0.02em;}
-.nav-links{display:flex;align-items:center;gap:6px;}
-.nav-item{position:relative;}
-.nav-link{
-  font-size:0.92rem;font-weight:500;color:var(--muted);
-  display:flex;align-items:center;gap:5px;padding:9px 12px;border-radius:8px;
-  cursor:pointer;border:none;background:none;transition:color .15s,background .15s;
-}
-.nav-link:hover{color:var(--text);background:var(--bg-soft);}
-.chev{width:9px;height:9px;opacity:.6;transition:transform .15s;}
-.nav-item.open .chev{transform:rotate(180deg);}
+      #three-products-one-platform .image-container {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        width: 150%;
+        top: clamp(-200px, -20%, -50px);
+        right: 0%;
+        margin-bottom: unset;
+        position: relative;
+      }
+      #three-products-one-platform .image-container .wp-block-ponyo-image {
+        width: 100%;
+      }
 
-.dropdown{
-  position:absolute;top:calc(100% + 8px);left:0;min-width:220px;
-  background:var(--surface);border:1px solid var(--border);border-radius:12px;
-  box-shadow:var(--shadow);padding:8px;opacity:0;visibility:hidden;
-  transform:translateY(-6px);transition:opacity .15s,transform .15s,visibility .15s;
-}
-.nav-item.open .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
-.dropdown a{
-  display:flex;flex-direction:column;gap:1px;padding:9px 12px;border-radius:8px;
-  font-size:0.86rem;font-weight:600;color:var(--text);
-}
-.dropdown a:hover{background:var(--bg-soft);}
-.dropdown a small{font-weight:400;color:var(--muted-2);font-size:0.74rem;}
+      #three-products-one-platform .eyebrow,
+      #three-products-one-platform .footer,
+      #three-products-one-platform .contributors {
+        display: none;
+      }
 
-.nav-right{display:flex;align-items:center;gap:12px;}
-.icon-btn{
-  width:36px;height:36px;border-radius:9px;border:1px solid var(--border);
-  background:var(--surface);display:flex;align-items:center;justify-content:center;
-  cursor:pointer;color:var(--muted);transition:border-color .15s,color .15s;
-}
-.icon-btn:hover{border-color:var(--blue);color:var(--blue);}
+      #three-products-one-platform .copy-container {
+        grid-row: 1;
+        grid-column: 1 / 2;
+      }
 
-.btn{
-  border-radius:9px;padding:10px 18px;font-size:0.88rem;font-weight:600;
-  cursor:pointer;border:1px solid transparent;display:inline-flex;align-items:center;gap:6px;
-  transition:filter .15s,transform .1s,background .15s,border-color .15s;
-}
-.btn:active{transform:scale(0.97);}
-.btn-ghost{background:var(--surface);border-color:var(--border);color:var(--text);}
-.btn-ghost:hover{border-color:var(--blue);color:var(--blue);}
-.btn-solid{background:linear-gradient(120deg,var(--blue),var(--blue-deep));color:#fff;}
-.btn-solid:hover{filter:brightness(1.08);}
-.btn-lg{padding:13px 24px;font-size:0.94rem;border-radius:10px;}
-.btn-block{width:100%;justify-content:center;}
+      #three-products-one-platform .link-copy {
+        grid-column: 1 / 3;
+      }
 
-.burger{display:none;width:36px;height:36px;border-radius:9px;border:1px solid var(--border);background:var(--surface);align-items:center;justify-content:center;cursor:pointer;color:var(--text);}
-.mobile-panel{
-  display:none;position:fixed;inset:0;top:61px;z-index:250;
-  background:var(--bg);padding:18px 20px;overflow-y:auto;
-}
-.mobile-panel.show{display:block;}
-.mobile-panel .nav-link{width:100%;justify-content:space-between;padding:14px 6px;border-bottom:1px solid var(--border);border-radius:0;}
-.mobile-sub{padding-left:16px;display:none;}
-.mobile-sub.show{display:block;}
-.mobile-sub a{display:block;padding:10px 6px;font-size:0.85rem;color:var(--muted);}
-.mobile-ctas{display:flex;flex-direction:column;gap:10px;margin-top:18px;}
+      .wp-block-ponyo-mason svg {
+        --imageHeight: 2rem;
+        --imageMaxWidth: 12rem;
+        --imageMinWidth: 6rem;
+      }
+      .wp-block-ponyo-axon .axon-container {
+        overflow: visible;
+      }
 
-/* ===== TERMINAL (Docker-style, always dark) ===== */
-.term-card{
-  background:var(--term-bg);border:1px solid var(--term-border);border-radius:13px;
-  box-shadow:var(--shadow);overflow:hidden;
-}
-.term-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;border-bottom:1px solid var(--term-border);background:var(--term-bar);}
-.tdot{width:9px;height:9px;border-radius:50%;}
-.tdot-r{background:#F0564B;}.tdot-y{background:#E8A93E;}.tdot-g{background:#3FB870;}
-.term-bar span{margin-left:6px;font-size:0.72rem;color:var(--term-muted);font-family:'JetBrains Mono',monospace;}
-.term-body{padding:16px 18px;font-family:'JetBrains Mono',monospace;font-size:0.79rem;line-height:1.95;color:var(--term-text);min-height:170px;}
-.term-body .pfx{color:var(--term-blue);}
-.term-body .ok{color:var(--term-cyan);}
-.term-body .dim{color:var(--term-muted);}
-.term-body .bar{color:var(--term-blue);}
-.term-cursor{display:inline-block;width:6px;height:12px;background:var(--term-blue);vertical-align:-2px;animation:blink 1.1s step-end infinite;}
-@keyframes blink{50%{opacity:0;}}
+      @media screen and (min-width: 769px) {
+        .wp-block-ponyo-russell .dropdown {
+          transform: translateX(-70%);
+        }
+        .wp-block-ponyo-russell .wrap:before {
+          left: 70%;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .wp-block-ponyo-russell .dropdown {
+          min-width: clamp(200px, 100vw, 300px);
+        }
+      }
 
-/* ===== FOOTER ===== */
-footer{border-top:1px solid var(--border);background:var(--bg-soft);}
-.foot-top{max-width:1280px;margin:0 auto;padding:52px 48px 32px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;}
-.foot-brand .logo{margin-bottom:12px;}
-.foot-brand p{font-size:0.85rem;color:var(--muted);max-width:260px;line-height:1.6;}
-.foot-col h4{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.07em;color:var(--muted-2);margin-bottom:14px;}
-.foot-col a{display:block;font-size:0.86rem;color:var(--muted);margin-bottom:11px;}
-.foot-col a:hover{color:var(--blue);}
-.foot-bottom{
-  max-width:1280px;margin:0 auto;padding:20px 48px;border-top:1px solid var(--border);
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;
-  font-size:0.8rem;color:var(--muted-2);
-}
+      .split-grid-portable {
+        border-radius: 22px 22px 0 0;
+        overflow: hidden;
+        border: 1px solid rgba(15, 23, 42, 0.06);
+      }
 
-/* ===== AUTH FORM (login/sign pages) ===== */
-.auth-wrap{min-height:calc(100vh - 61px);display:flex;align-items:center;justify-content:center;padding:40px 20px;}
-.auth-card{width:100%;max-width:400px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:34px 32px;box-shadow:var(--shadow);}
-.auth-title{font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:6px;}
-.auth-sub{font-size:0.88rem;color:var(--muted);margin-bottom:26px;}
-.field{margin-bottom:16px;}
-.field label{display:block;font-size:0.82rem;font-weight:600;margin-bottom:7px;}
-.field input{
-  width:100%;padding:11px 14px;border-radius:9px;border:1px solid var(--border);
-  background:var(--bg-soft);color:var(--text);font-size:0.9rem;font-family:'Inter',sans-serif;outline:none;
-  transition:border-color .15s,box-shadow .15s;
-}
-.field input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft);}
-.auth-divider{display:flex;align-items:center;gap:12px;margin:20px 0;color:var(--muted-2);font-size:0.78rem;}
-.auth-divider::before,.auth-divider::after{content:'';flex:1;height:1px;background:var(--border);}
-.auth-foot{text-align:center;font-size:0.86rem;color:var(--muted);margin-top:18px;}
-.auth-foot a{color:var(--blue);font-weight:600;}
-.auth-note{
-  display:none;margin-top:14px;padding:11px 14px;border-radius:9px;
-  background:var(--blue-soft);color:var(--blue-deep);font-size:0.82rem;border:1px solid rgba(14,111,255,0.2);
-}
-body.dark .auth-note{color:var(--term-blue);}
-.auth-note.show{display:block;}
-.auth-back{display:flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--muted);margin-bottom:24px;}
-.auth-back:hover{color:var(--blue);}
+      #invisible-to-developers {
+        padding-bottom: 0;
+      }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width:980px){
-  .nav-links{display:none;}
-  .burger{display:flex;}
-  .nav-right .btn,.nav-right .icon-btn:not(#themeBtn){display:none;}
-}
-@media (max-width:600px){
-  nav{padding:12px 18px;}
-  .foot-top{grid-template-columns:1fr 1fr;padding:40px 24px 24px;}
-  .foot-bottom{padding:18px 24px;flex-direction:column;align-items:flex-start;}
-}
-@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;}}
+      @media screen and (max-width: 900px) {
+        #invisible-to-developers .split-card {
+          padding-bottom: 0;
+        }
+      }
+      #runtime-under-every-agent {
+        padding: 3rem 2.5rem;
+      }
+
+      #what-this-unlocks wp-block-ponyo-erika {
+        border: 1px solid #e7eaef;
+        border-radius: 18px;
+        align-content: baseline;
+      }
+      #agent-platform h1 {
+        font-size: clamp(36px, 4vw, 51px);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        font-weight: 500;
+      }
+
+      #agent-platform .wp-block-ponyo-richard .wp-block-ponyo-text {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      #agent-platform .wp-block-ponyo-gabriel * {
+        font-size: clamp(26px, 3vw, 38px);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      #three-products-one-platform .body-copy {
+        font-size: 14.5px;
+        line-height: 1.55;
+      }
+
+      .wp-block-ponyo-stephen h2 {
+        font-size: clamp(40px, 5vw, 60px);
+        font-weight: 500;
+        letter-spacing: -0.025em;
+        line-height: 1;
+      }
+
+      .wp-block-ponyo-stephen p {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      #what-this-unlocks .wp-block-ponyo-gabriel .wp-block-ponyo-heading,
+      #runtime-under-every-agent .wp-block-ponyo-heading,
+      #invisible-to-developers .wp-block-ponyo-heading {
+        font-size: clamp(36px, 5vw, 64px);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+
+      #what-this-unlocks .wp-block-ponyo-text,
+      #runtime-under-every-agent .wp-block-ponyo-text,
+      #invisible-to-developers .wp-block-ponyo-text {
+        color: var(--ink-soft);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      #docker-download .wp-block-ponyo-image {
+        padding-bottom: 0;
+        max-height: 250px;
+        overflow: hidden;
+      }
+      #docker-download .wp-block-ponyo-image img {
+        max-width: 620px;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-media {
+        flex: 4;
+      }
+      .wp-block-ponyo-adam .wp-block-ponyo-adam-text {
+        flex: 3;
+      }
+      #stats {
+        border-bottom: 0;
+      }
+
+      @media screen and (max-width: 500px) {
+        #build-better-together .wp-block-ponyo-kevin {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+                        .sbx-terminal-embed {
+                          --docker-blue: #1d63ed;
+                          --term-bg: #0c1424;
+                          --chrome-bg: #f4f5f7;
+                          --chrome-border: #e3e6ea;
+                          --txt: #e8eef6;
+                          --txt-dim: #8a97ab;
+                          --blue: #4d8fe0;
+                          --blue-bright: #5b9cf0;
+                          --blue-soft: #6da6ef;
+                          --green: #56c98a;
+                          --green-bright: #6fe0a0;
+                          --rule: rgba(96, 134, 196, 0.45);
+                          box-sizing: border-box;
+                          width: 100%;
+                          max-width: 1080px;
+                          margin-inline: auto;
+                          font-family: "Manrope", system-ui, sans-serif;
+                          border-radius: 16px;
+                          overflow: hidden;
+                          box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+                          border: 1px solid rgba(0, 0, 0, 0.2);
+                        }
+                        .sbx-terminal-embed *,
+                        .sbx-terminal-embed *::before,
+                        .sbx-terminal-embed *::after {
+                          box-sizing: border-box;
+                        }
+
+                        .sbx-terminal-embed .sbx-window {
+                          border-radius: 14px;
+                          overflow: hidden;
+                          box-shadow:
+                            0 1px 0 rgba(255, 255, 255, 0.06) inset,
+                            0 40px 80px -20px rgba(0, 0, 0, 0.7),
+                            0 8px 24px -8px rgba(0, 0, 0, 0.5);
+                        }
+                        .sbx-terminal-embed .titlebar {
+                          background: var(--chrome-bg);
+                          border-bottom: 1px solid var(--chrome-border);
+                          height: 46px;
+                          display: grid;
+                          grid-template-columns: 1fr auto 1fr;
+                          align-items: center;
+                          padding: 0 18px;
+                        }
+                        .sbx-terminal-embed .lights {
+                          display: flex;
+                          gap: 8px;
+                        }
+                        .sbx-terminal-embed .lights i {
+                          width: 12px;
+                          height: 12px;
+                          border-radius: 50%;
+                          display: block;
+                        }
+                        .sbx-terminal-embed .lights .r {
+                          background: #ff5f57;
+                        }
+                        .sbx-terminal-embed .lights .y {
+                          background: #febc2e;
+                        }
+                        .sbx-terminal-embed .lights .g {
+                          background: #28c840;
+                        }
+                        .sbx-terminal-embed .title {
+                          text-align: center;
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: #5b6573;
+                        }
+
+                        .sbx-terminal-embed .sbx-term {
+                          background: linear-gradient(
+                            180deg,
+                            #0d1626 0%,
+                            #0b1220 100%
+                          );
+                          padding: 22px 26px 26px;
+                          min-height: 240px;
+                          max-height: 240px;
+                          overflow-y: auto;
+                          overflow-x: auto;
+                          font-family:
+                            "JetBrains Mono", ui-monospace, monospace;
+                          font-size: clamp(13px, 2.8vw, 15px);
+                          line-height: 1.55;
+                          color: var(--txt);
+                          scrollbar-color: rgba(120, 150, 200, 0.45)
+                            rgba(0, 0, 0, 0.2);
+                          scrollbar-width: thin;
+                        }
+                        .sbx-terminal-embed .sbx-term::-webkit-scrollbar {
+                          width: 8px;
+                          height: 8px;
+                        }
+                        .sbx-terminal-embed .sbx-term::-webkit-scrollbar-track {
+                          background: rgba(0, 0, 0, 0.2);
+                          border-radius: 4px;
+                        }
+                        .sbx-terminal-embed .sbx-term::-webkit-scrollbar-thumb {
+                          background: rgba(120, 150, 200, 0.45);
+                          border-radius: 4px;
+                        }
+                        .sbx-terminal-embed
+                          .sbx-term::-webkit-scrollbar-thumb:hover {
+                          background: rgba(140, 170, 220, 0.55);
+                        }
+                        .sbx-terminal-embed .sbx-term .line {
+                          white-space: pre-wrap;
+                        }
+                        .sbx-terminal-embed .green {
+                          color: var(--green);
+                        }
+                        .sbx-terminal-embed .green-bright {
+                          color: var(--green-bright);
+                        }
+                        .sbx-terminal-embed .blue {
+                          color: var(--blue);
+                        }
+                        .sbx-terminal-embed .blue-bright {
+                          color: var(--blue-bright);
+                        }
+                        .sbx-terminal-embed .dim {
+                          color: var(--txt-dim);
+                        }
+                        .sbx-terminal-embed .marker {
+                          color: #4a5a78;
+                        }
+                        .sbx-terminal-embed .prompt-sym {
+                          color: var(--txt);
+                        }
+                        .sbx-terminal-embed .cursor {
+                          display: inline-block;
+                          width: 9px;
+                          height: 1.05em;
+                          background: var(--txt);
+                          transform: translateY(2px);
+                          margin-left: 1px;
+                        }
+
+                        .sbx-terminal-embed .cc-box {
+                          position: relative;
+                          border: 1px solid var(--rule);
+                          border-radius: 4px;
+                          margin: 24px 0 4px;
+                          display: grid;
+                          grid-template-columns: 1fr 1.25fr;
+                          overflow: visible;
+                          transform-origin: top;
+                        }
+                        .sbx-terminal-embed .cc-legend {
+                          position: absolute;
+                          top: -0.72em;
+                          left: 18px;
+                          background: #0c1322;
+                          padding: 0 8px;
+                          color: var(--blue);
+                          font-size: 14px;
+                          white-space: nowrap;
+                        }
+                        .sbx-terminal-embed .cc-left,
+                        .sbx-terminal-embed .cc-right {
+                          padding: 24px 22px;
+                        }
+                        .sbx-terminal-embed .cc-left {
+                          border-right: 1px solid var(--rule);
+                          text-align: center;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                          gap: 13px;
+                        }
+                        .sbx-terminal-embed .cc-welcome {
+                          color: var(--blue-bright);
+                          white-space: nowrap;
+                        }
+                        .sbx-terminal-embed .robot {
+                          width: 76px;
+                          height: 62px;
+                        }
+                        .sbx-terminal-embed .cc-meta {
+                          color: var(--blue);
+                          line-height: 1.5;
+                        }
+                        .sbx-terminal-embed .cc-right {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 6px;
+                        }
+                        .sbx-terminal-embed .cc-h {
+                          color: var(--blue);
+                        }
+                        .sbx-terminal-embed .cc-sub {
+                          color: var(--blue-soft);
+                        }
+                        .sbx-terminal-embed .cc-divider {
+                          height: 1px;
+                          background: var(--rule);
+                          margin: 13px 0;
+                        }
+                        .sbx-terminal-embed .hr {
+                          border: none;
+                          border-top: 1px dashed rgba(120, 150, 200, 0.3);
+                          margin: 16px 0 12px;
+                        }
+                        .sbx-terminal-embed .final-prompt {
+                          color: var(--green);
+                        }
+                        .sbx-terminal-embed .final-prompt .chev {
+                          color: var(--green-bright);
+                        }
+
+                        @media (max-width: 640px) {
+                          .sbx-terminal-embed .cc-box {
+                            grid-template-columns: 1fr;
+                          }
+                          .sbx-terminal-embed .cc-left {
+                            border-right: none;
+                            border-bottom: 1px solid var(--rule);
+                          }
+                        }
+                            .docker-gov-split-grid-embed {
+                              --ink: #0b1220;
+                              --ink-soft: #475569;
+                              box-sizing: border-box;
+                              max-width: 1500px;
+                              margin: 0 auto;
+                              padding: 0;
+                              font-family:
+                                "Inter",
+                                -apple-system,
+                                BlinkMacSystemFont,
+                                "Segoe UI",
+                                Roboto,
+                                Helvetica,
+                                Arial,
+                                sans-serif;
+                              color: var(--ink);
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                            .docker-gov-split-grid-embed *,
+                            .docker-gov-split-grid-embed *::before,
+                            .docker-gov-split-grid-embed *::after {
+                              box-sizing: border-box;
+                            }
+
+                            .docker-gov-split-grid-embed .split__grid {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr;
+                              gap: 0;
+                              border-radius: 22px 22px 0 0;
+                              overflow: hidden;
+                              border: 1px solid rgba(15, 23, 42, 0.06);
+                              border-bottom: 0;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card {
+                              position: relative;
+                              padding: 28px 28px 0;
+                              display: flex;
+                              flex-direction: column;
+                              overflow: hidden;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card--light {
+                              background: #f9fafb;
+                              color: var(--ink);
+                            }
+
+                            .docker-gov-split-grid-embed .split-card--dark {
+                              background: #0c1530;
+                              color: #ffffff;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card__eyebrow {
+                              display: inline-flex;
+                              align-items: center;
+                              gap: 8px;
+                              margin: 0 0 10px;
+                              color: #2563eb;
+                              font-size: 14px;
+                              font-weight: 500;
+                              letter-spacing: -0.005em;
+                            }
+
+                            .docker-gov-split-grid-embed
+                              .split-card__eyebrow--on-dark {
+                              color: #aac4f8;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card__icon {
+                              width: 16px;
+                              height: 16px;
+                              display: inline-flex;
+                              flex: 0 0 auto;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card__icon svg {
+                              width: 100%;
+                              height: 100%;
+                              display: block;
+                            }
+
+                            .docker-gov-split-grid-embed .split-card__title {
+                              margin: 0 0 36px;
+                              font-size: clamp(20px, 1.6vw, 22px);
+                              line-height: 1.25;
+                              letter-spacing: -0.012em;
+                              font-weight: 500;
+                            }
+
+                            .docker-gov-split-grid-embed
+                              .split-card__title--on-dark {
+                              background-image: none;
+                              background-clip: border-box;
+                              -webkit-background-clip: border-box;
+                              -webkit-text-fill-color: #ffffff;
+                              color: #ffffff;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal {
+                              flex: 1;
+                              background: #0e1217;
+                              border-radius: 14px 14px 0 0;
+                              overflow: hidden;
+                              border: 1px solid rgba(0, 0, 0, 0.08);
+                              border-bottom: 0;
+                              font-family:
+                                ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+                                Monaco, "Cascadia Mono", "Liberation Mono",
+                                Consolas, monospace;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__bar {
+                              display: flex;
+                              align-items: center;
+                              gap: 8px;
+                              padding: 11px 14px;
+                              background: rgba(255, 255, 255, 0.025);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__dot {
+                              width: 11px;
+                              height: 11px;
+                              border-radius: 50%;
+                              display: inline-block;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__dot--r {
+                              background: #ff5f56;
+                            }
+                            .docker-gov-split-grid-embed .terminal__dot--y {
+                              background: #ffbd2e;
+                            }
+                            .docker-gov-split-grid-embed .terminal__dot--g {
+                              background: #27c93f;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__path {
+                              margin-left: auto;
+                              color: #6c7686;
+                              font-size: 12px;
+                              letter-spacing: 0.01em;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__body {
+                              margin: 0;
+                              padding: 22px 22px 26px;
+                              color: #d6dce6;
+                              font-size: 13px;
+                              line-height: 1.7;
+                              font-family: inherit;
+                              display: flex;
+                              flex-direction: column;
+                              gap: 0;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__line {
+                              display: flex;
+                              align-items: baseline;
+                              gap: 12px;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__prompt,
+                            .docker-gov-split-grid-embed .terminal__ok {
+                              flex: 0 0 1ch;
+                              text-align: center;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__prompt {
+                              color: #f3c151;
+                            }
+                            .docker-gov-split-grid-embed .terminal__ok {
+                              color: #58d68d;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__cursor {
+                              display: inline-block;
+                              width: 8px;
+                              height: 14px;
+                              background: #d6dce6;
+                              opacity: 0;
+                              align-self: center;
+                              transform: translateY(1px);
+                            }
+
+                            @keyframes docker-gov-term-blink {
+                              to {
+                                opacity: 0;
+                              }
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__type {
+                              display: inline-block;
+                              overflow: hidden;
+                              white-space: nowrap;
+                              width: 0;
+                              vertical-align: baseline;
+                            }
+
+                            .docker-gov-split-grid-embed .terminal__line--ok,
+                            .docker-gov-split-grid-embed .terminal__line--next {
+                              opacity: 0;
+                              transition: opacity 0.4s ease-out;
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .terminal__type {
+                              animation: docker-gov-term-type 1.1s
+                                steps(28, end) forwards 0.25s;
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .terminal__line--ok {
+                              opacity: 1;
+                              transition-delay: 1.5s;
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .terminal__line--next {
+                              opacity: 1;
+                              transition-delay: 1.9s;
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .terminal__cursor {
+                              opacity: 1;
+                              animation: docker-gov-term-blink 1.1s steps(2)
+                                infinite 1.9s;
+                            }
+
+                            @keyframes docker-gov-term-type {
+                              to {
+                                width: 28ch;
+                              }
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .console__row {
+                              opacity: 1;
+                              transform: translateY(0);
+                            }
+
+                            .docker-gov-split-grid-embed.is-playing
+                              .console__row:nth-child(1) {
+                              transition-delay: 0.3s;
+                            }
+                            .docker-gov-split-grid-embed.is-playing
+                              .console__row:nth-child(2) {
+                              transition-delay: 0.7s;
+                            }
+                            .docker-gov-split-grid-embed.is-playing
+                              .console__row:nth-child(3) {
+                              transition-delay: 1.1s;
+                            }
+                            .docker-gov-split-grid-embed.is-playing
+                              .console__row:nth-child(4) {
+                              transition-delay: 1.5s;
+                            }
+
+                            .docker-gov-split-grid-embed .console {
+                              flex: 1;
+                              background: #0e1217;
+                              border-radius: 14px 14px 0 0;
+                              overflow: hidden;
+                              border: 1px solid #363941;
+                              border-bottom: 0;
+                              font-family:
+                                ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+                                Monaco, "Cascadia Mono", "Liberation Mono",
+                                Consolas, monospace;
+                            }
+
+                            .docker-gov-split-grid-embed .console__bar {
+                              display: flex;
+                              align-items: center;
+                              gap: 8px;
+                              padding: 11px 14px;
+                              background: rgba(255, 255, 255, 0.02);
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                            }
+
+                            .docker-gov-split-grid-embed .console__list {
+                              list-style: none;
+                              margin: 0;
+                              padding: 4px 18px;
+                            }
+
+                            .docker-gov-split-grid-embed .console__row {
+                              display: grid;
+                              grid-template-columns: 96px 64px 1fr;
+                              align-items: center;
+                              gap: 12px;
+                              padding: 12px 0;
+                              border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                              font-size: 12.5px;
+                              opacity: 0;
+                              transform: translateY(8px);
+                              transform-origin: left center;
+                              transition:
+                                opacity 0.4s ease-out,
+                                transform 0.5s cubic-bezier(0.22, 1.2, 0.36, 1);
+                            }
+
+                            .docker-gov-split-grid-embed
+                              .console__row:last-child {
+                              border-bottom: 0;
+                            }
+
+                            .docker-gov-split-grid-embed .console__time {
+                              color: #8a93ab;
+                              font-size: 12px;
+                              letter-spacing: 0.01em;
+                            }
+
+                            .docker-gov-split-grid-embed .console__tag {
+                              display: inline-flex;
+                              align-items: center;
+                              justify-content: center;
+                              height: 22px;
+                              padding: 0 10px;
+                              border-radius: 999px;
+                              font-size: 11.5px;
+                              font-weight: 600;
+                              letter-spacing: 0.01em;
+                              color: #0e1217;
+                              width: max-content;
+                            }
+
+                            .docker-gov-split-grid-embed .console__tag--allow {
+                              background: #9be9c4;
+                            }
+                            .docker-gov-split-grid-embed .console__tag--sign {
+                              background: #a9c8f3;
+                            }
+                            .docker-gov-split-grid-embed .console__tag--scope {
+                              background: #7da3f4;
+                              color: #ffffff;
+                            }
+                            .docker-gov-split-grid-embed .console__tag--attest {
+                              background: #82cccc;
+                            }
+
+                            .docker-gov-split-grid-embed .console__msg {
+                              color: #c4cbe0;
+                              font-size: 12.5px;
+                            }
+
+                            .docker-gov-split-grid-embed .console__msg em {
+                              font-style: normal;
+                              color: #ffffff;
+                            }
+
+                            @media (max-width: 900px) {
+                              .docker-gov-split-grid-embed .split__grid {
+                                grid-template-columns: 1fr;
+                              }
+                              .docker-gov-split-grid-embed .split-card {
+                                padding: 24px 22px 26px;
+                              }
+                              .docker-gov-split-grid-embed .console__row {
+                                grid-template-columns: 88px 60px 1fr;
+                                gap: 10px;
+                              }
+                            }
+
+                            @media (prefers-reduced-motion: reduce) {
+                              .docker-gov-split-grid-embed .terminal__type {
+                                width: auto;
+                                animation: none;
+                              }
+                              .docker-gov-split-grid-embed .terminal__line--ok,
+                              .docker-gov-split-grid-embed
+                                .terminal__line--next,
+                              .docker-gov-split-grid-embed .console__row {
+                                opacity: 1;
+                                transform: none;
+                                transition: none;
+                              }
+                              .docker-gov-split-grid-embed .terminal__cursor {
+                                opacity: 1;
+                                animation: none;
+                              }
+                            }
+                        /* ---- Custom properties (subset used by the grid) ---- */
+                        .runtime-grid-portable {
+                          --bg: #f4f6f9;
+                          --ink: #0b1220;
+                          --ink-soft: #475569;
+                          --radius: 18px;
+                          --headline-gradient: linear-gradient(
+                            180deg,
+                            #0f121b 0%,
+                            #283045 100%
+                          );
+                          box-sizing: border-box;
+                          max-width: 100%;
+                          font-family:
+                            -apple-system, BlinkMacSystemFont, "Inter",
+                            "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                          color: var(--ink);
+                          -webkit-font-smoothing: antialiased;
+                          -moz-osx-font-smoothing: grayscale;
+                        }
+
+                        .runtime-grid-portable *,
+                        .runtime-grid-portable *::before,
+                        .runtime-grid-portable *::after {
+                          box-sizing: border-box;
+                        }
+
+                        /* ---- Grid layout ---- */
+                        .runtime-grid-portable .runtime__grid {
+                          display: grid;
+                          grid-template-columns: repeat(2, minmax(0, 1fr));
+                          gap: 24px;
+                          width: 100%;
+                          align-items: start;
+                        }
+
+                        .runtime-grid-portable .runtime__col {
+                          display: flex;
+                          flex-direction: column;
+                          gap: 24px;
+                          min-width: 0;
+                        }
+
+                        /* ---- Runtime card ---- */
+                        .runtime-grid-portable .runtime-card {
+                          position: relative;
+                          background: #ffffff;
+                          border-radius: 18px;
+                          border: 1px solid #e7eaef;
+                          padding: 28px 28px 0;
+                          display: flex;
+                          flex-direction: column;
+                          overflow: hidden;
+                          min-width: 0;
+                          box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+                        }
+
+                        .runtime-grid-portable .runtime-card--short {
+                          min-height: 280px;
+                          max-height: 280px;
+                        }
+
+                        .runtime-grid-portable .runtime-card--medium-short {
+                          min-height: 340px;
+                          max-height: 340px;
+                        }
+
+                        .runtime-grid-portable .runtime-card--medium {
+                          min-height: 380px;
+                          max-height: 380px;
+                        }
+
+                        .runtime-grid-portable .runtime-card--tall {
+                          min-height: 440px;
+                          max-height: 440px;
+                        }
+
+                        /* ---- Animated gradient blobs ---- */
+                        .runtime-grid-portable .runtime-card::before,
+                        .runtime-grid-portable .runtime-card::after {
+                          content: "";
+                          position: absolute;
+                          inset: -60%;
+                          pointer-events: none;
+                          z-index: 0;
+                          will-change: transform;
+                        }
+
+                        .runtime-grid-portable .runtime-card::before {
+                          background: radial-gradient(
+                            ellipse 42% 22% at 50% 72%,
+                            rgba(37, 96, 255, 0.55) 0%,
+                            rgba(37, 96, 255, 0.22) 40%,
+                            rgba(37, 96, 255, 0.05) 75%,
+                            transparent 100%
+                          );
+                          animation: runtime-card-drift-a 9s ease-in-out
+                            infinite;
+                        }
+
+                        .runtime-grid-portable .runtime-card::after {
+                          background:
+                            radial-gradient(
+                              ellipse 26% 16% at 30% 73%,
+                              rgba(37, 96, 255, 0.45) 0%,
+                              rgba(37, 96, 255, 0.12) 45%,
+                              transparent 80%
+                            ),
+                            radial-gradient(
+                              ellipse 24% 15% at 70% 71%,
+                              rgba(37, 96, 255, 0.4) 0%,
+                              rgba(37, 96, 255, 0.1) 50%,
+                              transparent 80%
+                            );
+                          animation: runtime-card-drift-b 11s ease-in-out
+                            infinite reverse;
+                        }
+
+                        @keyframes runtime-card-drift-a {
+                          0% {
+                            transform: translate(0, 0) scale(1);
+                          }
+                          25% {
+                            transform: translate(8%, -3%) scale(1.15);
+                          }
+                          50% {
+                            transform: translate(-5%, 5%) scale(0.9);
+                          }
+                          75% {
+                            transform: translate(-7%, -2%) scale(1.1);
+                          }
+                          100% {
+                            transform: translate(0, 0) scale(1);
+                          }
+                        }
+
+                        @keyframes runtime-card-drift-b {
+                          0% {
+                            transform: translate(0, 0) scale(1);
+                          }
+                          25% {
+                            transform: translate(-7%, 4%) scale(1.15);
+                          }
+                          50% {
+                            transform: translate(6%, -5%) scale(0.88);
+                          }
+                          75% {
+                            transform: translate(7%, 3%) scale(1.1);
+                          }
+                          100% {
+                            transform: translate(0, 0) scale(1);
+                          }
+                        }
+
+                        /* Stagger the four cards so the blobs aren't synchronized. */
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(1)
+                          .runtime-card:nth-of-type(2)::before {
+                          animation-delay: -7s;
+                        }
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(1)
+                          .runtime-card:nth-of-type(2)::after {
+                          animation-delay: -11s;
+                        }
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(2)
+                          .runtime-card:nth-of-type(1)::before {
+                          animation-delay: -4s;
+                        }
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(2)
+                          .runtime-card:nth-of-type(1)::after {
+                          animation-delay: -9s;
+                        }
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(2)
+                          .runtime-card:nth-of-type(2)::before {
+                          animation-delay: -13s;
+                        }
+                        .runtime-grid-portable
+                          .runtime__col:nth-of-type(2)
+                          .runtime-card:nth-of-type(2)::after {
+                          animation-delay: -17s;
+                        }
+
+                        /* ---- Card body / text ---- */
+                        .runtime-grid-portable .runtime-card__body {
+                          position: relative;
+                          z-index: 2;
+                          max-width: 42ch;
+                        }
+
+                        .runtime-grid-portable .runtime-card__title {
+                          margin: 0 0 12px;
+                          font-size: 19px;
+                          line-height: 1.3;
+                          letter-spacing: -0.012em;
+                          font-weight: 600;
+                          font-family:
+                            "ABC Repro",
+                            -apple-system,
+                            BlinkMacSystemFont,
+                            "Inter",
+                            "Segoe UI",
+                            Roboto,
+                            Helvetica,
+                            Arial,
+                            sans-serif;
+                          background-image: var(--headline-gradient);
+                          -webkit-background-clip: text;
+                          background-clip: text;
+                          color: transparent;
+                        }
+
+                        .runtime-grid-portable .runtime-card__desc {
+                          margin: 0;
+                          color: var(--ink-soft);
+                          font-size: 16px;
+                          line-height: 1.55;
+                          font-family:
+                            "Inter",
+                            -apple-system,
+                            BlinkMacSystemFont,
+                            "Segoe UI",
+                            Roboto,
+                            Helvetica,
+                            Arial,
+                            sans-serif;
+                        }
+
+                        /* ---- Card visual area ---- */
+                        .runtime-grid-portable .runtime-card__visual {
+                          position: relative;
+                          z-index: 2;
+                          margin-top: auto;
+                          display: flex;
+                          align-items: flex-end;
+                          justify-content: flex-end;
+                        }
+
+                        .runtime-grid-portable .runtime-card__visual--term {
+                          align-self: center;
+                          justify-content: flex-start;
+                          align-items: flex-start;
+                          width: 88%;
+                          margin-top: 44px;
+                          margin-bottom: -28px;
+                        }
+
+                        .runtime-grid-portable .runtime-card__visual--agent {
+                          position: relative;
+                          display: block;
+                          align-self: center;
+                          margin-top: auto;
+                          margin-bottom: 0;
+                          width: 100%;
+                          max-width: 506px;
+                          height: 200px;
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent {
+                          position: absolute;
+                          width: 100%;
+                          max-width: 460px;
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent:nth-of-type(1) {
+                          top: 0;
+                          right: 0;
+                          z-index: 2;
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent:nth-of-type(2) {
+                          top: 46px;
+                          right: 46px;
+                          z-index: 1;
+                          filter: brightness(0.92);
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent__chrome {
+                          padding: 10px 14px;
+                        }
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent__tabs {
+                          padding: 10px 14px 8px;
+                          font-size: 13px;
+                        }
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent__body {
+                          padding: 12px 14px 16px;
+                          font-size: 14px;
+                        }
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent__title {
+                          font-size: 14px;
+                        }
+                        .runtime-grid-portable
+                          .runtime-card__visual--agent
+                          .runtime-agent__status {
+                          font-size: 13px;
+                        }
+
+                        .runtime-grid-portable .runtime-card__visual--cubes {
+                          margin-top: 24px;
+                          margin-right: -28px;
+                          margin-bottom: -24px;
+                        }
+
+                        .runtime-grid-portable .runtime-card__visual--sphere {
+                          margin-top: -24px;
+                          margin-right: -56px;
+                          margin-bottom: -8px;
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--cubes
+                          svg {
+                          width: 310px;
+                          height: 220px;
+                        }
+
+                        .runtime-grid-portable
+                          .runtime-card__visual--sphere
+                          svg {
+                          width: 265px;
+                          height: 265px;
+                        }
+
+                        /* ---- Shared terminal dots ---- */
+                        .runtime-grid-portable .terminal__dot {
+                          width: 11px;
+                          height: 11px;
+                          border-radius: 50%;
+                          display: inline-block;
+                        }
+
+                        .runtime-grid-portable .terminal__dot--r {
+                          background: #ff5f56;
+                        }
+                        .runtime-grid-portable .terminal__dot--y {
+                          background: #ffbd2e;
+                        }
+                        .runtime-grid-portable .terminal__dot--g {
+                          background: #27c93f;
+                        }
+
+                        /* ---- Card 1 terminal mock ---- */
+                        .runtime-grid-portable .runtime-term {
+                          width: 100%;
+                          border-radius: 10px;
+                          background: #0e1217;
+                          border: 1px solid #363941;
+                          overflow: hidden;
+                          font-family:
+                            ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+                            Monaco, "Cascadia Mono", "Liberation Mono",
+                            Consolas, monospace;
+                        }
+
+                        .runtime-grid-portable .runtime-term__bar {
+                          display: flex;
+                          align-items: center;
+                          gap: 7px;
+                          padding: 10px 12px;
+                          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                        }
+
+                        .runtime-grid-portable .runtime-term__body {
+                          padding: 12px 14px 16px;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 4px;
+                          font-size: 12px;
+                          line-height: 1.55;
+                          color: #e6ebf2;
+                        }
+
+                        .runtime-grid-portable .runtime-term__line {
+                          display: flex;
+                          gap: 10px;
+                          white-space: nowrap;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                        }
+
+                        .runtime-grid-portable .runtime-term__line--muted {
+                          color: #b9c2cf;
+                        }
+                        .runtime-grid-portable .runtime-term__prompt {
+                          color: #8aa1c5;
+                        }
+                        .runtime-grid-portable .runtime-term__prompt--ok {
+                          color: #58d68d;
+                        }
+
+                        .runtime-grid-portable .runtime-term__cursor {
+                          display: inline-block;
+                          width: 8px;
+                          height: 14px;
+                          background: #d6dce6;
+                          align-self: center;
+                          transform: translateY(1px);
+                          animation: terminal-blink 1.1s steps(2) infinite;
+                        }
+
+                        @keyframes terminal-blink {
+                          to {
+                            opacity: 0;
+                          }
+                        }
+
+                        /* Scroll-triggered "type out" for the terminal */
+                        .runtime-grid-portable .runtime-term__line {
+                          opacity: 0;
+                          transition: opacity 0.3s ease-out;
+                        }
+
+                        .runtime-grid-portable .runtime-term__type {
+                          display: inline-block;
+                          overflow: hidden;
+                          white-space: nowrap;
+                          width: 0;
+                          vertical-align: baseline;
+                          flex-shrink: 0;
+                        }
+
+                        .runtime-grid-portable.is-running .runtime-term__line {
+                          opacity: 1;
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(1) {
+                          transition-delay: 0s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(2) {
+                          transition-delay: 0.65s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(3) {
+                          transition-delay: 0.8s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(4) {
+                          transition-delay: 0.95s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(5) {
+                          transition-delay: 1.1s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(6) {
+                          transition-delay: 1.4s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(7) {
+                          transition-delay: 2.2s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(8) {
+                          transition-delay: 2.4s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(9) {
+                          transition-delay: 2.65s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(10) {
+                          transition-delay: 2.85s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-term__line:nth-child(11) {
+                          transition-delay: 3.05s;
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-term__type--cmd1 {
+                          animation: runtime-term-type-1 0.55s steps(14, end)
+                            forwards 0.05s;
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-term__type--cmd2 {
+                          animation: runtime-term-type-2 0.75s steps(24, end)
+                            forwards 1.45s;
+                        }
+
+                        @keyframes runtime-term-type-1 {
+                          to {
+                            width: 14ch;
+                          }
+                        }
+                        @keyframes runtime-term-type-2 {
+                          to {
+                            width: 24ch;
+                          }
+                        }
+
+                        .runtime-grid-portable .runtime-term__line--rule {
+                          align-items: center;
+                          gap: 8px;
+                          margin-top: 6px;
+                          color: #b9c2cf;
+                        }
+
+                        .runtime-grid-portable .runtime-term__rule {
+                          flex: 1;
+                          height: 1px;
+                          background: rgba(255, 255, 255, 0.12);
+                        }
+
+                        .runtime-grid-portable .runtime-term__rule-label {
+                          font-size: 11px;
+                          color: #94a3b8;
+                          white-space: nowrap;
+                        }
+
+                        /* ---- Card 3 agent panels ---- */
+                        .runtime-grid-portable .runtime-agent {
+                          width: 100%;
+                          max-width: 340px;
+                          border-radius: 10px;
+                          background: #0e1217;
+                          border: 1px solid #363941;
+                          overflow: hidden;
+                          font-family:
+                            ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+                            Monaco, "Cascadia Mono", "Liberation Mono",
+                            Consolas, monospace;
+                          color: #e6ebf2;
+                          box-shadow: 0 16px 36px -22px rgba(37, 96, 255, 0.4);
+                        }
+
+                        .runtime-grid-portable .runtime-agent + .runtime-agent {
+                          box-shadow: 0 18px 40px -24px rgba(37, 96, 255, 0.35);
+                        }
+
+                        .runtime-grid-portable .runtime-agent__chrome {
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                          padding: 8px 12px;
+                          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                          background: rgba(255, 255, 255, 0.02);
+                        }
+
+                        .runtime-grid-portable .runtime-agent__title {
+                          display: inline-flex;
+                          align-items: center;
+                          gap: 6px;
+                          font-size: 12px;
+                          color: #e6ebf2;
+                          white-space: nowrap;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__title svg {
+                          color: #8aa1c5;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__status {
+                          display: inline-flex;
+                          align-items: center;
+                          gap: 6px;
+                          font-size: 11.5px;
+                          color: #cbd5e1;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__dot {
+                          width: 8px;
+                          height: 8px;
+                          border-radius: 2px;
+                          background: #ef4444;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__tabs {
+                          display: flex;
+                          gap: 18px;
+                          padding: 8px 12px 6px;
+                          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                          font-size: 11.5px;
+                          color: #94a3b8;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__tab {
+                          padding-bottom: 4px;
+                          border-bottom: 1px solid transparent;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__tab.is-active {
+                          color: #e6ebf2;
+                          border-bottom-color: #e6ebf2;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__body {
+                          padding: 10px 12px 14px;
+                          font-size: 12px;
+                          line-height: 1.55;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 2px;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__line {
+                          display: flex;
+                          gap: 10px;
+                          align-items: baseline;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__ok {
+                          width: 12px;
+                          text-align: center;
+                          color: #34d399;
+                        }
+
+                        .runtime-grid-portable .runtime-agent__ok--idle {
+                          color: #94a3b8;
+                        }
+
+                        /* Scroll-triggered running animation for agent panels */
+                        .runtime-grid-portable .runtime-agent__line {
+                          opacity: 0;
+                          transform: translateY(4px);
+                          transition:
+                            opacity 0.35s ease-out,
+                            transform 0.45s cubic-bezier(0.22, 1.2, 0.36, 1);
+                        }
+
+                        .runtime-grid-portable.is-running .runtime-agent__line {
+                          opacity: 1;
+                          transform: translateY(0);
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__line:nth-child(1) {
+                          transition-delay: 0.25s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__line:nth-child(2) {
+                          transition-delay: 0.55s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__line:nth-child(3) {
+                          transition-delay: 0.85s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__line:nth-child(4) {
+                          transition-delay: 1.15s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__line:nth-child(5) {
+                          transition-delay: 1.45s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__line:nth-child(1) {
+                          transition-delay: 0.45s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__line:nth-child(2) {
+                          transition-delay: 0.75s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__line:nth-child(3) {
+                          transition-delay: 1.05s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__line:nth-child(4) {
+                          transition-delay: 1.35s;
+                        }
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__line:nth-child(5) {
+                          transition-delay: 1.65s;
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(1)
+                          .runtime-agent__dot {
+                          animation: runtime-agent-pulse 1.4s ease-in-out 0.25s
+                            infinite;
+                        }
+
+                        .runtime-grid-portable.is-running
+                          .runtime-agent:nth-of-type(2)
+                          .runtime-agent__dot {
+                          animation: runtime-agent-pulse 1.4s ease-in-out 0.45s
+                            infinite;
+                        }
+
+                        @keyframes runtime-agent-pulse {
+                          0%,
+                          100% {
+                            opacity: 1;
+                          }
+                          50% {
+                            opacity: 0.5;
+                          }
+                        }
+
+                        /* ---- Reduced motion ---- */
+                        @media (prefers-reduced-motion: reduce) {
+                          .runtime-grid-portable .runtime-card::before,
+                          .runtime-grid-portable .runtime-card::after {
+                            animation: none;
+                          }
+                          .runtime-grid-portable .runtime-term__line {
+                            opacity: 1;
+                            transition: none;
+                          }
+                          .runtime-grid-portable .runtime-term__type {
+                            width: auto;
+                            animation: none;
+                          }
+                          .runtime-grid-portable .runtime-term__cursor {
+                            animation: none;
+                          }
+                          .runtime-grid-portable .runtime-agent__line {
+                            opacity: 1;
+                            transform: none;
+                            transition: none;
+                          }
+                          .runtime-grid-portable .runtime-agent__dot {
+                            animation: none !important;
+                          }
+                        }
+
+                        /* ---- Tablet (≤ 1100px) ---- */
+                        @media (max-width: 1100px) {
+                          .runtime-grid-portable .runtime-card {
+                            padding: 24px 24px 0;
+                          }
+                        }
+
+                        /* ---- Mobile (≤ 900px) ---- */
+                        @media (max-width: 900px) {
+                          .runtime-grid-portable .runtime__grid {
+                            grid-template-columns: 1fr;
+                          }
+                          .runtime-grid-portable .runtime__col {
+                            gap: 20px;
+                          }
+                          .runtime-grid-portable .runtime-card--short,
+                          .runtime-grid-portable .runtime-card--medium-short,
+                          .runtime-grid-portable .runtime-card--medium,
+                          .runtime-grid-portable .runtime-card--tall {
+                            min-height: auto;
+                            max-height: none;
+                          }
+                          .runtime-grid-portable .runtime-card__visual--agent {
+                            width: 100%;
+                            height: auto;
+                            min-height: 200px;
+                          }
+                          .runtime-grid-portable
+                            .runtime-card__visual--agent
+                            .runtime-agent {
+                            position: relative;
+                            width: 100%;
+                            top: auto;
+                            right: auto;
+                          }
+                          .runtime-grid-portable
+                            .runtime-card__visual--agent
+                            .runtime-agent:nth-of-type(2) {
+                            display: none;
+                          }
+                          .runtime-grid-portable
+                            .runtime-card__visual--cubes
+                            svg {
+                            width: 220px;
+                            height: 160px;
+                          }
+                          .runtime-grid-portable
+                            .runtime-card__visual--sphere
+                            svg {
+                            width: 180px;
+                            height: 180px;
+                          }
+                          .runtime-grid-portable .runtime-card__visual--cubes {
+                            margin-right: -16px;
+                            margin-bottom: -16px;
+                          }
+                          .runtime-grid-portable .runtime-card__visual--sphere {
+                            margin-right: -28px;
+                            margin-bottom: -4px;
+                          }
+                        }
+
+                        /* ---- Small mobile (≤ 600px) ---- */
+                        @media (max-width: 600px) {
+                          .runtime-grid-portable .runtime__grid {
+                            gap: 16px;
+                          }
+                          .runtime-grid-portable .runtime-card {
+                            padding: 20px 18px 0;
+                            border-radius: 14px;
+                          }
+                          .runtime-grid-portable .runtime-card__title {
+                            font-size: 17px;
+                          }
+                          .runtime-grid-portable .runtime-card__desc {
+                            font-size: 14px;
+                          }
+                          .runtime-grid-portable .runtime-card__visual--term {
+                            width: 100%;
+                            margin-top: 28px;
+                          }
+                          .runtime-grid-portable .runtime-term {
+                            border-radius: 8px;
+                          }
+                          .runtime-grid-portable .runtime-term__body {
+                            font-size: 11px;
+                            padding: 10px 12px 14px;
+                          }
+                        }
+                              .cls-1 {
+                                fill: var(--iconColor, #1d63ed);
+                              }
+                              .cls-1 {
+                                fill: var(--iconColor, #1d63ed);
+                              }
+                              .cls-1 {
+                                fill: var(--iconColor, #1d63ed);
+                              }
+                              .cls-1 {
+                                fill: var(--iconColor, #1d63ed);
+                              }
+                              .cls-1 {
+                                fill: var(
+                                  --iconColor,
+                                  var(--iconColor, #1d63ed)
+                                );
+                              }
+                              .cls-1 {
+                                fill: var(--iconColor, #1d63ed);
+                              }
